@@ -1,0 +1,160 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="mt30">
+        <section class="step1 text-center">
+            <img src="/images/b-step1.png" style="width: 890px">
+        </section>
+        <section class="insurance-step mt30">
+            <div class="clearfix insurance-list">
+                <label class="col-md-2 text-right">给谁投保：</label>
+                <div class="col-md-10 radio-list">
+                    <div class="radio pull-left" name="pay-way" value="1"><ins></ins><span>自己</span></div>
+                    <div class="radio pull-left" name="pay-way" value="2"><ins></ins><span>丈夫</span></div>
+                    <div class="radio pull-left" name="pay-way" value="3"><ins></ins><span>妻子</span></div>
+                    <div class="radio pull-left" name="pay-way" value="4"><ins></ins><span>父亲</span></div>
+                    <div class="radio pull-left" name="pay-way" value="5"><ins></ins><span>母亲</span></div>
+                    <div class="radio pull-left" name="pay-way" value="6"><ins></ins><span>儿子</span></div>
+                    <div class="radio pull-left" name="pay-way" value="7"><ins></ins><span>女儿</span></div>
+                    <div class="radio pull-left" name="pay-way" value="8"><ins></ins><span>其他</span></div>
+                    
+                </div>
+            </div>
+            <div class="clearfix insurance-list">
+                <label class="col-md-2 text-right">您的性别：</label>
+                <div class="col-md-8 radio-list">
+                    <div class="radio pull-left" name="sex" value="1"><ins></ins><span>男</span></div>
+                    <div class="radio pull-left" name="sex" value="2"><ins></ins><span>女</span></div>                    
+                </div>
+            </div>
+            <div class="clearfix insurance-list">
+                <label class="col-md-2 text-right">您的出生年月：</label>
+                <div class="col-md-2">
+                     <select class="form-control">
+                         <option>1980</option>
+                         <option>1982</option>
+                     </select>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control">
+                        <option>09</option>
+                        <option>08</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix insurance-list">
+                <label class="col-md-2 text-right">是否有社保：</label>
+                <div class="col-md-8 radio-list">
+                    <div class="radio pull-left" name="social" value="1"><ins></ins><span>是</span></div>
+                    <div class="radio pull-left" name="social" value="2"><ins></ins><span>否</span></div>
+                </div>
+            </div>
+            <div class="clearfix insurance-list">
+                <label class="col-md-2 text-right">您目前居住地：</label>
+                <div class="col-md-2">
+                    <select class="form-control">
+                        <option>上海</option>
+                        <option>上海</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control">
+                        <option>上海市</option>
+                        <option>上海市</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control">
+                        <option>浦东</option>
+                        <option>黄埔</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix insurance-list mt20">
+                <label class="col-md-2 text-right"> </label>
+                <div class="col-md-3">
+                    <a href="/insurance-1" class="btn btn-warning btn-block">去填写保障需求</a>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+
+</div><!--end container-->
+<br>
+
+{/content}
+
+{<script}
+    <link href="/css/form.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function($) {
+            $.icheck = {
+                init: function() {
+                    var _this = this;
+                    _this._checkbox = "checkbox";
+                    _this._radio = "radio";
+                    _this._disabled = "disabled";
+                    _this._enable = "enable";
+                    _this._checked = "checked";
+                    _this._hover = "hover";
+                    _this._arrtype = [_this._checkbox, _this._radio];
+                    _this._mobile = /ipad|iphone|ipod|android|blackberry|windows phone|opera mini|silk/i.test(navigator.userAgent);
+                    $.each(_this._arrtype, function(k, v) {
+                        _this.click(v);
+                        if(!_this._mobile){
+                            _this.mouseover(v);
+                            _this.mouseout(v);
+                        }
+                    });
+                },
+                click: function(elem) {
+                    var _this = this;
+                    elem = "." + elem;
+                    $(document).on("click", elem, function() {
+                        var $this = $(this),
+                            _ins = $this.find("ins");
+                        if (!(_ins.hasClass(_this._disabled) || _ins.hasClass(_this._enable))) {
+                            if ( !! _ins.hasClass(_this._checked)) {
+                                _ins.removeClass(_this._checked).addClass(_this._hover);
+                            } else {
+                                if (/radio/ig.test(elem)) {
+                                    var _name = $this.attr("name");
+                                    $(elem + "[name=" + _name + "]").find("ins").removeClass(_this._checked);
+                                }
+                                $(elem).find("ins").removeClass(_this._hover);
+                                _ins.addClass(_this._checked);
+                            }
+                        }
+                    });
+                },
+                mouseover: function(elem) {
+                    var _this = this;
+                    elem = "." + elem;
+                    $(document).on("mouseover", elem, function() {
+                        var $this = $(this);
+                        var _ins = $this.find("ins");
+                        if (!(_ins.hasClass(_this._disabled) || _ins.hasClass(_this._enable) || _ins.hasClass(_this._checked))) {
+                            _ins.addClass(_this._hover);
+                            $this.css("cursor","pointer");
+                        } else{
+                            $this.css("cursor","default");
+                        }
+                    });
+                },
+                mouseout: function(elem) {
+                    var _this = this;
+                    elem = "." + elem;
+                    $(document).on("mouseout", elem, function() {
+                        $(elem).find("ins").removeClass(_this._hover);
+                    });
+                }
+            };
+
+            $.icheck.init();
+
+        })(jQuery);
+    </script>
+{/script}

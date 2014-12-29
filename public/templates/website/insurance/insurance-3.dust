@@ -1,0 +1,74 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="mt30">
+        <section class="step1 text-center">
+            <img src="/images/b-step4.png" style="width: 890px">
+        </section>
+        <section class="insurance-step mt30">
+            <div class="alert alert-danger">
+                <div class="clearfix insurance-info">
+                    <div class="col-md-2 text-right">个人情况：</div>
+                    <div class="col-md-8">男，34岁，单身，有孩子，不需要赡养老人，年收入：5万元以下，有贷款，有社保</div>
+                </div>
+                <div class="clearfix insurance-info">
+                    <div class="col-md-2 text-right">财务评价：</div>
+                    <div class="col-md-8">您处于单身期，但由于孩子的存在，家庭财务可能会遭遇挑战。
+                        独力抚养孩子的“单引擎家庭”，应更注意理财投资的安全性和保险规划。</div>
+                </div>
+                <div class="clearfix insurance-info">
+                    <div class="col-md-2 text-right">综合分析：</div>
+                    <div class="col-md-8 red">建议保险配置在净收入的5%，保费支出建议在2500元 /年，目前您最需要配置重疾险</div>
+                </div>
+                <div class="clearfix insurance-info mt20">
+                    <div class="col-md-2 text-right"></div>
+                    <div class="col-md-8"><a href="#"> <img src="/images/btn-xqtj.png" style="width: 219px;"></a> </div>
+                </div>
+                <div class="bor-dashed col-lg-offset-1 mt30">保险配置建议</div>
+                <div class="clearfix insurance-info mt10">
+                    <div class="col-md-1 text-right"></div>
+                    <div class="col-md-10">
+                        <div class="col-md-2">险种</div>
+                        <div class="col-md-2"> 紧急度 </div>
+                        <div class="col-md-4">  需求建议 </div>
+                        <div class="col-md-4"> 相关产品</div>
+                    </div>
+                </div>
+                <div class="clearfix insurance-info ">
+                    <div class="col-md-1 text-right"></div>
+                    <div class="col-md-10">
+                        <div class="col-md-2"><span class="icon"><img src="/images/security.png" style="width: 20px;"> </span>重疾险</div>
+                        <div class="col-md-2"> 高 </div>
+                        <div class="col-md-4"> 需求度较高，请马上投保</div>
+                        <div class="col-md-4"> <a href="#">浏览重疾险产品（共142款） >></a> </div>
+                    </div>
+                </div>
+                <div class="clearfix insurance-info ">
+                    <div class="col-md-1 text-right"></div>
+                    <div class="col-md-10">
+                        <div class="col-md-2"><span class="icon"><img src="/images/favourite.png" style="width: 20px;"> </span>重疾险</div>
+                        <div class="col-md-2"> 高 </div>
+                        <div class="col-md-4"> 需求度较高，请马上投保</div>
+                        <div class="col-md-4"> <a href="#">浏览重疾险产品（共142款） >></a> </div>
+                    </div>
+                </div>
+                <div class="clearfix insurance-info ">
+                    <div class="col-md-1 text-right"></div>
+                    <div class="col-md-10">
+                        <div class="col-md-2"><span class="icon"><img src="/images/emotion.png" style="width: 20px;"> </span>重疾险</div>
+                        <div class="col-md-2"> 高 </div>
+                        <div class="col-md-4"> 需求度较高，请马上投保</div>
+                        <div class="col-md-4"> <a href="#">浏览重疾险产品（共142款） >></a> </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </article>
+
+
+</div><!--end container-->
+<br>
+
+{/content}

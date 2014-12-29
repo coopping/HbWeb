@@ -1,0 +1,127 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="mt30">
+        <section class="step1 text-center">
+            <img src="/images/step3.png" style="width: 650px">
+        </section>
+        <section class="policy-step mt30">
+            <div class="clearfix policy-box">
+                <div class="pull-left">
+                    <img src="/images/step-img3.png" style="width: 343px">
+                </div>
+                <div class=" pull-right policy-body">
+                    <h3 class="orange">评估结果</h3>
+                    <div class="clearfix">
+                        <div class="col-md-2">保障内容：</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                    90分
+                                </div>
+                            </div>
+                            <div class="popover top">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            ① 保障内容不够全面
+                                        </li>
+                                        <li>
+                                            ② 保障内容不够全面，涉及范围不够广
+                                        </li>
+                                       <li>③ 保障内容不够全面</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end clearfix-->
+                    <div class="clearfix">
+                        <div class="col-md-2">保障内容：</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    70分
+                                </div>
+                            </div>
+                            <div class="popover top">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            ① 保障内容不够全面
+                                        </li>
+                                        <li>
+                                            ② 保障内容不够全面，涉及范围不够广
+                                        </li>
+                                        <li>③ 保障内容不够全面</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end clearfix-->
+                    <div class="clearfix">
+                        <div class="col-md-2">保障内容：</div>
+                        <div class="col-md-8">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    60分
+                                </div>
+                            </div>
+                            <div class="popover top">
+                                <div class="arrow"></div>
+                                <div class="popover-content">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            ① 保障内容不够全面
+                                        </li>
+                                        <li>
+                                            ② 保障内容不够全面，涉及范围不够广
+                                        </li>
+                                        <li>③ 保障内容不够全面</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end clearfix-->
+                    <div class="clearfix">
+                        <div class="col-md-2 blue">您的电话：</div>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div><!--end clearfix-->
+                    <div class="clearfix">
+                        <div class="col-md-2 blue">您的意见：</div>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-block btn-primary">进一步联系我们</button>
+                        </div>
+                    </div><!--end clearfix-->
+                </div><!--end policy-box-->
+            </div>
+        </section>
+        <section class="text-right mt20">
+            <a href="/policy-1" class="btn btn-default">上一步</a>
+            <a href="/policy-2" class="btn btn-primary">完成</a>
+        </section>
+    </article>
+
+
+</div><!--end container-->
+<br>
+{/content}
+
+{<script}
+<script type="text/javascript">
+    $(function(){
+       $('.progress').hover(function(){
+           $(this).next('.popover').show()
+       },function(){
+           $(this).next('.popover').hide()
+       })
+    })
+</script>
+{/script}

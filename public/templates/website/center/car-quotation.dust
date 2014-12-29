@@ -1,0 +1,201 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <section class="mt30">
+        <table class="table table-bordered table-baoxian">
+            <thead>
+            <tr>
+                <th>选择车型</th>
+                <th>
+                    <select class="select-style" >
+                        <option> 请选择品牌</option>
+                    </select>
+                </th>
+                <th>
+                    <select class="select-style">
+                        <option> 请选择车系</option>
+                    </select>
+                </th>
+                <th>
+                    <select class="select-style">
+                        <option> 请选择车型</option>
+                    </select>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="4" class="text-center">
+                   <h3><small>新车保险指导价  </small>  <strong class="orange"> 12,212   </strong>
+                   <small> 新车保险优惠价</small>         <strong class="red">11,086</strong>       <small>   元</small><small class="smaller">（注 : 新车购买商业险享9折优惠）</small></h3>
+                    此结果仅供参考，实际费用以当地缴费为准
+                </td>
+
+            </tr>
+            <tr>
+                <td class="bg" colspan="4">
+                    <span class="blue h4 pull-left">强制保险</span>
+                    <button class="btn btn-primary pull-right">即刻投保</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>款项</td>
+                <td>选项</td>
+                <td>金额</td>
+                <td>明细</td>
+            </tr>
+            <tr>
+                <td>交通事故强制责任保险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                   <div class="pull-left"><a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>家用6座以下</div>
+                   <div class="pull-right"><a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>家用6座及以上</div>
+                </td>
+                <td><input type="text" class="input-from" placeholder="950"> 元</td>
+                <td>家用6座以下950元/年，6座及以上1100元/年</td>
+            </tr>
+            <tr>
+                <td class="bg" colspan="4">
+                    <span class="blue h4 pull-left">商业保险</span>
+                    <span class="blue h4 pull-right">商业保险小计：11,262元</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>款项</td>
+                <td>选项</td>
+                <td>金额</td>
+                <td>明细</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;第三者责任险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>赔付额度：<br>
+                    <ul class="list-unstyled list-money">
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>5万
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>10万
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>20万
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>50万
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>100万
+                        </li>
+                    </ul>
+                </td>
+                <td><input type="text" class="input-from" placeholder="1630"> 元</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;车辆损失险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                </td>
+                <td><input type="text" class="input-from" placeholder="4363"> 元</td>
+                <td>基础保费+裸车价格×1.0880%</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;全车盗抢险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                </td>
+                <td><input type="text" class="input-from" placeholder="1718"> 元</td>
+                <td>基础保费+裸车价格×费率</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;第三者责任险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                    <ul class="list-unstyled list-money">
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>进口
+                        </li>
+
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>国产
+                        </li>
+                    </ul>
+                </td>
+                <td><input type="text" class="input-from" placeholder="538"> 元</td>
+                <td>进口新车购置价×0.25%，国产新车购置价×0.15%</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;自燃损失险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                </td>
+                <td><input type="text" class="input-from" placeholder="538"> 元</td>
+                <td>新车购置价×0.15%</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;不计免赔特约险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                </td>
+                <td><input type="text" class="input-from" placeholder="538"> 元</td>
+                <td>（车辆损失险+第三者责任险）×20%</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;无过责任险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                </td>
+                <td><input type="text" class="input-from" placeholder="538"> 元</td>
+                <td>第三者责任险保险费×20%</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;车上人员责任险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>
+                </td>
+                <td><input type="text" class="input-from" placeholder="538"> 元</td>
+                <td>每人保费50元，可根据车辆的实际座位数填写×20%</td>
+            </tr>
+            <tr>
+                <td>  <a class="order-check-check" href="javascript:void(0)"><input type="checkbox" name="pay-way"> <span></span></a>
+                    &nbsp;无过责任险&nbsp;<span class="glyphicon glyphicon-question-sign"></span></td>
+                <td>赔付额度：<br>
+                    <ul class="list-unstyled list-money">
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>2千
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>5千
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>1万
+                        </li>
+                        <li>
+                            <a class="order-radio-check " href="javascript:void(0)"><input type="radio" name="pay-way"> <span></span></a>2万
+                        </li>
+
+                    </ul>
+                </td>
+                <td><input type="text" class="input-from" placeholder="1630"> 元</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-center">
+                    <h3><small>新车保险指导价  </small>  <strong class="orange"> 12,212   </strong>
+                        <small> 新车保险优惠价</small>         <strong class="red">11,086</strong>       <small>   元</small><small class="smaller">（注 : 新车购买商业险享9折优惠）</small></h3>
+                    此结果仅供参考，实际费用以当地缴费为准
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+</div><!--end container-->
+<br>
+{/content}

@@ -1,0 +1,149 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="mt30">
+        <section class="step1 text-center">
+            <img src="/images/b-step2.png" style="width: 890px">
+        </section>
+        <section class="insurance-step mt30">
+            <div class="clearfix insurance-list">
+                <label class="col-md-2 text-right">给谁投保：</label>
+                <div class="col-md-9 radio-list">
+                        <div class="radio pull-left" name="riskType" value="1"><ins></ins><span>意外保险</span></div>
+                        <div class="radio pull-left" name="riskType" value="2"><ins></ins><span>医疗保险</span></div>
+                        <div class="radio pull-left" name="riskType" value="3"><ins></ins><span>少儿保险</span></div>
+                        <div class="radio pull-left" name="riskType" value="4"><ins></ins><span>养老保险</span></div>
+                        <div class="radio pull-left" name="riskType" value="5"><ins></ins><span>人寿保险</span></div>
+                        <div class="radio pull-left" name="riskType" value="6"><ins></ins><span>理财保险</span></div>                        
+                        <div class="tab-content">
+                            <div aria-labelledby="home-tab" id="home" class="tab-pane fade " role="tabpanel">
+                                <p><span class="blue">选择保障范围</span>：<span class="red">（请勾选最接近你需求的名词）</span></p>
+                                <div class="check-list">
+                                    <span><input type="checkbox">少儿重疾</span>
+                                    <span><input type="checkbox">教育创业/婚嫁金</span>
+                                    <span><input type="checkbox">住院手术费 </span>
+                                    <span><input type="checkbox"> 少儿意外</span>
+                                </div>
+
+                                <div class="gray-box mt20">
+                                    <strong class="blue">已选</strong>：<span>教育创业/婚嫁金<em>X</em></span> <span>少儿意外<em>X</em></span>
+                                </div>
+                            </div>
+                            <div aria-labelledby="profile-tab" id="profile" class="tab-pane fade" role="tabpanel">
+                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                            </div>
+                            <div aria-labelledby="dropdown1-tab" id="dropdown1" class="tab-pane fade" role="tabpanel">
+                                <p><span class="blue">选择保障范围</span>：<span class="red">（请勾选最接近你需求的名词）</span></p>
+                                <div class="check-list">
+                                    <span><input type="checkbox">少儿重疾</span>
+                                    <span><input type="checkbox">教育创业/婚嫁金</span>
+                                    <span><input type="checkbox">住院手术费 </span>
+                                    <span><input type="checkbox"> 少儿意外</span>
+                                </div>
+
+                                <div class="gray-box mt20">
+                                    <strong class="blue">已选</strong>：<span>教育创业/婚嫁金<em>X</em></span> <span>少儿意外<em>X</em></span>
+                                </div>
+                            </div>
+                            <div aria-labelledby="dropdown2-tab" id="dropdown2" class="tab-pane fade" role="tabpanel">
+                                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                            </div>
+                            <div aria-labelledby="dropdown31-tab" id="dropdown3" class="tab-pane fade" role="tabpanel">
+                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                            </div>
+                            <div aria-labelledby="dropdown4-tab" id="dropdown4" class="tab-pane fade" role="tabpanel">
+                                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                            </div>
+                        </div>
+                </div><!--end radio-list-->
+            </div>
+            <div class="clearfix insurance-list mt20">
+                <label class="col-md-2 text-right"> </label>
+                <div class="col-md-3">
+                    <a href="/insurance-2" class="btn btn-warning btn-block">去填写联系方式</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="/insurance" class="btn btn-default btn-block">返回上一步</a>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+
+</div><!--end container-->
+<br>
+{/content}
+
+{<script}
+    <link href="/css/form.css" rel="stylesheet">
+    <script type="text/javascript">
+        (function($) {
+            $.icheck = {
+                init: function() {
+                    var _this = this;
+                    _this._checkbox = "checkbox";
+                    _this._radio = "radio";
+                    _this._disabled = "disabled";
+                    _this._enable = "enable";
+                    _this._checked = "checked";
+                    _this._hover = "hover";
+                    _this._arrtype = [_this._checkbox, _this._radio];
+                    _this._mobile = /ipad|iphone|ipod|android|blackberry|windows phone|opera mini|silk/i.test(navigator.userAgent);
+                    $.each(_this._arrtype, function(k, v) {
+                        _this.click(v);
+                        if(!_this._mobile){
+                            _this.mouseover(v);
+                            _this.mouseout(v);
+                        }
+                    });
+                },
+                click: function(elem) {
+                    var _this = this;
+                    elem = "." + elem;
+                    $(document).on("click", elem, function() {
+                        var $this = $(this),
+                            _ins = $this.find("ins");
+                        if (!(_ins.hasClass(_this._disabled) || _ins.hasClass(_this._enable))) {
+                            if ( !! _ins.hasClass(_this._checked)) {
+                                _ins.removeClass(_this._checked).addClass(_this._hover);
+                            } else {
+                                if (/radio/ig.test(elem)) {
+                                    var _name = $this.attr("name");
+                                    $(elem + "[name=" + _name + "]").find("ins").removeClass(_this._checked);
+                                }
+                                $(elem).find("ins").removeClass(_this._hover);
+                                _ins.addClass(_this._checked);
+                            }
+                        }
+                    });
+                },
+                mouseover: function(elem) {
+                    var _this = this;
+                    elem = "." + elem;
+                    $(document).on("mouseover", elem, function() {
+                        var $this = $(this);
+                        var _ins = $this.find("ins");
+                        if (!(_ins.hasClass(_this._disabled) || _ins.hasClass(_this._enable) || _ins.hasClass(_this._checked))) {
+                            _ins.addClass(_this._hover);
+                            $this.css("cursor","pointer");
+                        } else{
+                            $this.css("cursor","default");
+                        }
+                    });
+                },
+                mouseout: function(elem) {
+                    var _this = this;
+                    elem = "." + elem;
+                    $(document).on("mouseout", elem, function() {
+                        $(elem).find("ins").removeClass(_this._hover);
+                    });
+                }
+            };
+
+            $.icheck.init();
+
+        })(jQuery);
+    </script>
+{/script}

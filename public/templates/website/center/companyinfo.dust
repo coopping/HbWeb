@@ -1,0 +1,87 @@
+{>"layouts/mypage" /}
+
+{<content}
+	<div class="pull-right member-info col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><span class="h4">保险公司信息查询</span></div>
+                    <div class="panel-body">
+                        <h4>寿险公司<small class="orange">点击logo弹出公司基本信息</small></h4>
+                        <ul class="list-unstyled logo-list clearfix mt20">
+                            <li>
+                                <img src="/images/zh-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/taiping-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/taiping-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/gh-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/zd-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                        </ul>
+<hr>
+
+                        <h4>寿险公司<small class="orange">点击logo弹出公司基本信息</small></h4>
+                        <ul class="list-unstyled logo-list clearfix mt20">
+                            <li>
+                                <img src="/images/zh-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/taiping-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/taiping-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/gh-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                            <li>
+                                <img src="/images/zd-logo.jpg" style="width: 110px" class="show-info" data-content="
+主营业务：寿险、部分意外险
+客服热线：95549" data-placement="top" data-toggle="popover" data-container="body"   title="总部地址：上海">
+                            </li>
+                        </ul>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div><!--end member-info-->
+{/content}
+
+{<script}
+<script type="text/javascript">
+    $(function(){
+        $('.show-info').popover('hide');
+    })
+</script>
+{/script}

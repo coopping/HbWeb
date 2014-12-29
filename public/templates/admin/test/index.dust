@@ -1,0 +1,139 @@
+{>"layouts/master" /}
+{<content}
+<div class="panel panel-primary">
+	<div class="panel-body">
+  	<form class="form-horizontal"  id="addSubForm" role="form" 
+  		method="post" action="/finance/preCheck"  enctype="multipart/form-data">
+  		<input type="hidden" name="_csrf" value="{_csrf}" />
+  		<input type="hidden" name="importtype" value="base" />
+  		<input type="hidden" id="providerId" name="providerId"  value="{providerId}" />
+	  	<div class="form-group">
+    		<label for="provider" class="col-sm-1 control-label">
+    			<span class="required-indicator">*</span>
+      		保险公司
+    		</label>
+	  	 	<div class="col-sm-2">
+	  	 		<input type="text"  name="providerCode" class="form-control" value="{providerName}" id="providerCode" required="true"/>
+	  	 	</div>
+	    	<label for="provider" class="col-sm-1 control-label">
+	    		<span class="required-indicator">*</span>
+      		应收月份
+    		</label>
+	  	 	<div class="col-sm-2">
+	  	 		<input type="text" name="bizYearMonth" class="form-control" value="{bizYearMonth}" id="bizYearMonth" required="true"/>
+	  	 	</div>
+	  	 	<label for="provider" class="col-sm-1 control-label">
+	  	 		<span class="required-indicator">*</span>
+      		上传文件
+    		</label>
+	  	 	<div class="col-sm-2">
+	  	 		<input type="file" name="uploadFile" class="form-control"  id="idno" required="true"/>
+	  	 	</div>
+	  	 	<label for="provider" class="col-sm-1 control-label">
+      			<a href="/finance/preCheck/dowload/1">模板下载</a>
+    		</label>
+			<label for="provider" class="col-sm-1 control-label">
+      			<a href="/finance/preCheck/exportStartCheck">待对账清单</a>
+    		</label>
+	  	 	<div class="col-sm-1">
+		  	 	<button type="submit" class="btn btn-primary">导入</button>
+	  	 	</div>
+	  	</div>
+		</form>
+	</div>
+	</div>
+	<div class="panel panel-primary">
+	<div class="panel-heading">对账导入清单</div>
+		<table class="table table-hover table-condensed">
+			<thead>
+				<tr>
+					<th class="col-md-2">文件</th>
+					<th class="col-md-2">机构</th>
+					<th class="col-md-2">保险公司</th>
+					<th class="col-md-2">应收月份</th>
+					<th class="col-md-1">导入保费</th>
+					<th class="col-md-1">导入代理费</th>
+					<th class="col-md-1">对账状态</th>
+					<th class="col-md-1">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+			{#relist}
+			    <tr>
+			      <td class="col-md-2">
+			        {fileName}
+			      </td>
+			      <td class="col-md-2">
+			        <div class="branchName">{branch}</div>
+            </td>
+			      <td class="col-md-2">
+			        {providerCode}
+            </td>
+            <td class="col-md-2">
+			        {bizYearMonth}
+            </td>
+            <td class="col-md-1" align="right" style="padding-right:95px;">
+              {@currency value="{.modalPrem}" /}
+            </td>
+			      <td class="col-md-1" align="right" style="padding-right:95px;">
+              {@currency value="{.agencyfee}" /}
+			      </td>
+			      <td class="col-md-1">
+			      	{@if cond="'{status}'=='Y'"}
+			      		已完成
+			      	{:else}
+			      		未完成
+			      	{/if}
+			      </td>
+			      <td class="col-md-1">
+			      {@if cond="'{status}'=='Y'"}
+			      	 <a href="/finance/preCheck/{id}/exportEndCheck">已对账清单</a>
+			      {:else}
+			     	 	<a class="btn btn-default" data-toggle="tooltip" data-placement="left" title="开始对账" 
+			      		href="/finance/preCheck/{.id}/check"><i class="icon-edit"></i>
+			      	</a>
+              <a class="btn btn-default" data-toggle="tooltip" data-placement="left" title="删除" 
+			      		href="/finance/preCheck/{.id}/delete"><i class="icon-remove"></i>
+			      	</a>
+			      {/if}
+			      </td>
+			    </tr>
+			    {/relist}
+			</tbody>
+		</table>
+</div>
+</div>
+{/content}
+{<script}
+<script type="text/javascript">
+
+	var dataOptions = {
+     startView:"year",
+     minView  :"year",
+     format : "yyyymm",
+     autoclose : true,
+     language : 'zh-CN',
+     minViewMode:1
+  };
+  $('#bizYearMonth').datepicker(dataOptions);
+
+
+	$(".branchName").branchName();
+	{!点双击出现下拉框!}
+    var providerList ={provider|js|s};      {!不转义!}
+    var countriesArray = $.map(providerList, function (value, key) { 
+          return { value: value, data: key }; 
+    });
+
+    $('#providerCode').autocomplete({
+         lookup: countriesArray,
+         minChars: 0,
+         flag:'A',
+         onSelect: function (suggestion) {
+              $('#selection').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
+              document.getElementById("providerId").value= suggestion.data;
+         }
+    });
+</script>
+{/script}
+

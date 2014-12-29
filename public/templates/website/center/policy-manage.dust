@@ -1,0 +1,94 @@
+{>"layouts/mypage" /}
+
+{<content}
+ <div class="pull-right member-info col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="h4">保单管理</span>
+        </div>
+        <div class="panel-body">
+            <form role="form" action="/website/agent/policy-manage" method="post">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="投保人" name="applicantname"></div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="投保时间" name="effectiveDate"></div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary">查询</button>
+                        <input type="hidden" name="_csrf" value="{_csrf}" />
+                    </div>
+                </div>
+            </form>
+
+            <table class="table table-bordered mt30">
+                <thead>
+                    <tr>
+                        <th>保单</th>
+                        <th>投保人</th>
+                        <th>保额</th>
+                        <th>保费</th>
+                        <th>保险起期</th>
+                        <th>保险止期</th>
+                        <th>
+                            <span class="glyphicon glyphicon-plus-sign blue"></span>
+                            <span class="glyphicon glyphicon-edit orange"></span>
+                            <span class="glyphicon glyphicon-trash red"></span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {#policys}
+                    <tr>
+                        <td>{.contractNo}</td>
+                        <td>{.applicantname}</td>
+                        <td>{.faceaMoutTotle}</td>
+                        <td>{.totalModalPrem}</td>
+                        <td>{@formatDate date="{.effectiveDate}" format="YYYY-MM-DD"/}</td>
+                        <td>{@formatDate date="{.expiryDate}" format="YYYY-MM-DD"/}</td>
+                        <td>
+                            <input type="checkbox"></td>
+                    </tr>
+                    {/policys}
+                </tbody>
+            </table>
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+
+</div>
+<!--end member-info-->
+{/content}
+
+{<script}
+<script type="text/javascript">
+    var options = {
+        currentPage:{page},
+        bootstrapMajorVersion:3,
+        totalPages:{pageCount},
+        pageUrl:function(type,page,current){         
+            $('.pagination').addClass("pull-right");     
+            return '/website/agent/policy-manage?page='+page+'&applicantname={applicantname}&effectiveDate={effectiveDate}';
+        },
+        itemContainerClass:function(type,page,current){
+            return (page === current) ? 'disabled' : 'pointer-cursor';
+        },
+        itemTexts:function(type,page,current){
+            switch (type) {
+                case "first":
+                    return "<<";
+                case "prev":
+                    return "<";
+                case "next":
+                    return ">";
+                case "last":
+                    return ">>";
+                case "page":
+                    return page;
+            }
+        }
+    };
+
+    $('.pagination').bootstrapPaginator(options);
+    $('.pagination').addClass("pull-right");
+</script>
+{/script}

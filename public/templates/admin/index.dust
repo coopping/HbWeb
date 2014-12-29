@@ -1,0 +1,52 @@
+{>"layouts/master" /}
+
+{<content}
+
+<div class="row">
+    <div class="col-sm-offset-2 col-sm-2">
+        <br>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-offset-2 col-sm-8 well">
+        <h2 class="text-primary">欢迎进入慧保电商平台管理系统！</h2>
+        <p>如需任何关于系统使用的答疑，请垂询： 李斌斌 18717996857。</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+</div>
+
+
+{/content}
+{<script}
+<script type="text/javascript">
+$(function() {
+    var options = {
+        currentPage: {page},
+        bootstrapMajorVersion: 3,
+        totalPages: {pageCount},
+        pageUrl: function(type, page, current) {
+            return '/admin/system/posts?condition[title]={condition.title}&page=' + page;
+        },
+        itemContainerClass: function(type, page, current) {
+            return (page === current) ? "disabled" : "pointer-cursor";
+        },
+        itemTexts: function(type, page, current) {
+            switch (type) {
+                case "first":
+                    return "<<";
+                case "prev":
+                    return "<";
+                case "next":
+                    return ">";
+                case "last":
+                    return ">>";
+                case "page":
+                    return page;
+            }
+        }
+    };
+    $('.pagination').bootstrapPaginator(options);
+});
+</script>
+{/script}

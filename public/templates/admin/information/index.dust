@@ -1,0 +1,234 @@
+{>"layouts/master" /}
+{<content}
+<div class="panel-group" id="mainContent">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="btn-group">
+                <a data-toggle="collapse" class="btn btn-default" data-toggle="collapse" data-parent="#mainContent" href="#condition">查询条件</a>
+                <a class="btn btn-default" id="addNewBtn" href="#" data-toggle="modal" data-target="#addModel">新增文章</a>
+            </div>
+        </div>
+        <div id="condition" class="panel-collapse collapse">
+            <div class="panel-body">
+                <form class="form-inline" role="form" id="queryForm" method="get">
+                    <!-- <input type="hidden" name="_csrf" value="{_csrf}" /> -->
+                    <div class="form-group">
+                        <label class="sr-only" for="qname">标题</label>
+                        <input type="text" class="form-control" value="{condition.title}" name="condition[title]" id="qtitle" placeholder="标题">
+                    </div>
+                    <button type="submit" class="btn btn-default">查询</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">查询结果</div>
+            <table class="table table-hover table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th class="col-sm-3">标题</th>
+                        <th class="col-sm-1">状态</th>
+                        <th class="col-sm-2">发布人</th>
+                        <th class="col-sm-2">发布日期</th>
+                        <th class="col-sm-4">操作选项</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {#posts}
+                    <tr>
+                        <td>{.title}</td>
+                        <td>{@baseCode code="{.state}" base="postState"/}</td>
+                        <td>{.oprUser}</td>
+                        <td>{@formatDate date="{.publishedAt}" format="YYYY-MM-DD HH:mm"/}</td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <a class="btn btn-default" data-toggle="tooltip"  value="{.id}" data-placement="left" name="editBtn" title="编辑" href="#"><i class="icon-edit icon-large"></i></a>
+                                <a class="btn btn-default" href="#" value="{.id}" data-toggle="tooltip" data-placement="top" name="deleteBtn" title="删除"><i class="icon-remove icon-large"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    {/posts}
+                </tbody>
+            </table>
+        </div>
+        <ul class="pagination"></ul>
+    </div>
+    
+    
+</div>
+
+<div class="modal fade" id="addModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">新增文章</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" id="submitBtn" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+{/content}
+{<script}
+<!-- <script type="text/javascript" src="/js/tinymce/tinymce.min.js"></script> -->
+<script src="http://cdn.bootcss.com/tinymce/4.1.3/tinymce.min.js"></script>
+<script type="text/javascript" src="/js/duster/clientBaseHelper.js"></script>
+<script type="text/javascript" src="/js/duster/postForm.js"></script>
+<script type="text/javascript">
+
+function renderPostForm(formData, action) {
+    dust.render('postForm', formData, function(err, out) {
+        $("div.modal-body").html(out);
+        tinymce.init({
+            selector: 'textarea.html-textarea',
+            language_url: '/js/tinymce/langs/zh_CN.js',
+            plugins: [
+                'hr', 'link', 'media', 'template', 'table', 'code', 'image', 'fullscreen', 'contextmenu', 'preview', 'save'
+            ],
+            paste_as_text: false,
+            menu: {
+                edit: {
+                    title: 'Edit',
+                    items: 'undo redo | cut copy paste pastetext | selectall'
+                },
+                insert: {
+                    title: 'Insert',
+                    items: 'link media image | template hr'
+                },
+                view: {
+                    title: 'View',
+                    items: 'visualaid'
+                },
+                format: {
+                    title: 'Format',
+                    items: 'bold italic underline strikethrough superscript subscript | formats | removeformat'
+                },
+                table: {
+                    title: 'Table',
+                    items: 'inserttable tableprops deletetable | cell row column'
+                },
+                tools: {
+                    title: 'Tools',
+                    items: 'code'
+                }
+            },
+            toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l   
+            ink image | preview',
+            contextmenu: "link image inserttable | cell row column deletetable | cut copy paste pastetext"
+        });
+        $("#postForm").validate({
+            submitHandler: function(form) {
+                $(":button").attr("disabled", "true");
+                form.action = action;
+                form.submit();
+            },
+            focusCleanup: true
+        });
+
+    });
+}
+
+$(function() {
+    $("#addNewBtn").click(function() {
+        var formData = {
+            '_csrf': '{_csrf}'
+        };
+        renderPostForm(formData, '/admin/information/new');
+        $("input[name='post[isTop]']").bootstrapSwitch('onText', '置顶');
+        $("input[name='post[isTop]']").bootstrapSwitch('offText', '不置顶');
+    });
+
+    $("#submitBtn").click(function() {
+        $("#postForm").submit();
+    });
+
+    $("a[name='editBtn']").click(function() {
+        var id = $(this).attr('value');
+        var formData = {
+            '_csrf': '{_csrf}'
+        };
+        $.get("/admin/information/" + id + "/edit?" + new Date().getTime(), function(data, status, xhr) {
+            if (status === 'success') {
+                formData.post = data.post;
+                renderPostForm(formData, '/admin/information/' + id + '/edit');
+                $("#myModalLabel").html('修改公告');
+                if (data.post.isTop) {
+                    $("input[name='post[isTop]']").attr('checked', '');
+                }
+                $("input[name='post[isTop]']").bootstrapSwitch('onText', '置顶');
+                $("input[name='post[isTop]']").bootstrapSwitch('offText', '不置顶');
+                $("#addModel").modal('show');
+            } else {
+                var some_html = '<br><div class="alert alert-danger fade in">';
+                some_html += '<label>调用后台出错：' + xhr.statusText + '</label>';
+                some_html += '</div>';
+                bootbox.alert(some_html);
+            }
+        });
+    });
+
+    $("a[name='deleteBtn']").click(function() {
+        var id = $(this).attr('value');
+        $.get("/admin/information/" + id + "/delete?" + new Date().getTime(), function(data, status) {
+            if (status === 'success') {
+                var some_html = '<br><div class="alert alert-success fade in">';
+                some_html += '<label>成功删除</label>';
+                some_html += '</div>';
+                var box = bootbox.alert(some_html); 
+                box.on('hidden.bs.modal', function (e) {
+                    window.location.reload();
+                });
+            } else {
+                var some_html = '<br><div class="alert alert-danger fade in">';
+                some_html += '<label>调用后台出错：' + xhr.statusText + '</label>';
+                some_html += '</div>';
+                bootbox.alert(some_html);              
+            }
+        });   
+    });
+
+    var options = {
+        currentPage: {page},
+        bootstrapMajorVersion: 3,
+        totalPages: {pageCount},
+        pageUrl: function(type, page, current) {
+            return '/admin/information/release?condition[title]={condition.title}&page=' + page;
+        },
+        itemContainerClass: function(type, page, current) {
+            return (page === current) ? "disabled" : "pointer-cursor";
+        },
+        itemTexts: function(type, page, current) {
+            switch (type) {
+                case "first":
+                    return "<<";
+                case "prev":
+                    return "<";
+                case "next":
+                    return ">";
+                case "last":
+                    return ">>";
+                case "page":
+                    return page;
+            }
+        }
+    };
+    $('.pagination').bootstrapPaginator(options);
+
+    $("#queryForm").validate({
+        submitHandler:function(form){
+            $(":button").attr("disabled","true");  
+            form.action = '/admin/information';
+            form.submit();
+        },
+        focusCleanup:true
+    }); 
+});
+
+</script>
+{/script}

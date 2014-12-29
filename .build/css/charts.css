@@ -1,0 +1,255 @@
+
+
+#zt-component-inner {
+    background-color: #252530 !important;
+    padding: 0 !important;
+}
+#zt-mainmenu {
+    display: none !important;
+}
+#mobile-button {
+    display: none !important;
+}
+h2.demo-header {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 100 !important;
+    left: 340px;
+    margin: 0 auto !important;
+    position: absolute;
+    right: 340px;
+    text-align: center;
+    text-transform: none !important;
+    top: 25px;
+}
+
+#demo-component {
+    background-color: #f6f6f6;
+}
+#demo-menu {
+    background-color: #252530;
+    float: left;
+    min-height: 570px;
+    padding-top: 50px;
+    width: 25%;
+}
+#demo-menu-inner {
+    border-left: 1px solid #313131;
+}
+#demo-menu h4 {
+    border-top: 1px solid #34343e;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+    padding: 10px;
+}
+.demo-menu-item .menu-content {
+    display: none;
+}
+.demo-menu-item .menu-content.active {
+    display: block;
+}
+.toggle-text {
+    float: left;
+    width: 90%;
+}
+.toggle-icon {
+    float: right;
+}
+.demo-menu-item.active {
+    background-color: #34343e;
+}
+.demo-menu-item.active .menu-content {
+    display: block;
+}
+#demo-menu .demo-menu-item.active h4 {
+    font-weight: 900;
+}
+.demo-menu-item.active .toggle-icon:after {
+    content: "";
+    font-family: "FontAwesome";
+}
+#demo-menu a {
+    color: white;
+    font-weight: 100;
+}
+#demo-menu li.active a {
+    color: #8085e8;
+    font-weight: 900;
+}
+#demo-menu ul {
+    margin: 0;
+    padding: 0;
+}
+#demo-menu li {
+    border-top: 1px solid #252530;
+    list-style-type: none;
+    padding: 10px;
+}
+#demo-menu li.active {
+    position: relative;
+}
+#demo-menu li.active:after {
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid;
+    border-top: 10px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -10px;
+    width: 0;
+}
+#styleswitcher {
+    background: none repeat scroll 0 0 #252530;
+    height: 40px;
+    padding-left: 30px;
+}
+#styleswitcher ul {
+    margin: 0;
+}
+#styleswitcher li {
+    background-color: #34343e;
+    float: left;
+    height: 20px;
+    list-style-type: none;
+    margin-right: 5px;
+    padding: 10px;
+}
+#styleswitcher li.active {
+    background-color: #ffffff;
+}
+#styleswitcher a {
+    color: white;
+    font-weight: 100;
+}
+#styleswitcher li.active a {
+    color: #313131;
+    font-weight: 400;
+}
+#small-switcher {
+    display: none;
+}
+#chart-switcher {
+    font-size: 400%;
+    height: 0;
+    margin: 0 20px;
+    text-align: center;
+}
+#chart-switcher a {
+    color: #888;
+    font-weight: 100;
+    position: relative;
+    top: 230px;
+}
+#chart-switcher span {
+    display: none;
+    margin: 0 40px;
+}
+#chart-switcher #previous-example {
+    float: left;
+}
+#chart-switcher #next-example {
+    float: right;
+}
+#demo-buttons {
+    margin: 30px 0;
+    text-align: center;
+}
+#demo-buttons a {
+    background-color: #d6d1d1;
+}
+#demo-buttons a:hover {
+    background-color: #40818b;
+}
+#demo-content {
+    border: medium none;
+    float: left;
+    left: 20%;
+    padding: 0;
+    width: 75%;
+}
+#demo-content-container {
+}
+#demo-chart {
+    background-color: #ffffff;
+    min-height: 400px;
+    padding: 30px 50px;
+}
+.highslide-header {
+    border-bottom: 1px solid silver;
+}
+.highslide-footer {
+}
+@media (min-width: 1600px) {
+#zt-header .container {
+    padding: 0;
+}
+}
+@media (max-width: 1600px) {
+#zt-header .container {
+    padding: 0;
+}
+}
+@media (max-width: 1170px) {
+#demo-menu h4 {
+    font-size: 22px;
+}
+}
+@media (max-width: 768px) {
+h2 {
+    display: none;
+}
+#demo-component {
+    border: medium none;
+}
+#demo-menu {
+    display: none;
+    width: 100%;
+}
+#demo-content {
+    width: 100%;
+}
+#demo-content-container {
+    padding: 0;
+}
+#demo-chart {
+    padding: 0;
+}
+#chart-switcher {
+    font-size: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+#chart-switcher span {
+    display: inline;
+    margin: 0 10px;
+}
+#chart-switcher a {
+    margin: 0 10px;
+    position: static;
+}
+#chart-switcher #previous-example, #chart-switcher #next-example {
+    padding: 0 10px;
+}
+#styleswitcher {
+    display: none;
+}
+#small-switcher {
+    display: block;
+    padding: 0 10px;
+}
+#small-switcher a {
+    float: left;
+    margin-right: 2.5%;
+    padding: 3.75%;
+    width: 15%;
+}
+#small-switcher select {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+}
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{post.title} | 慧宝 | HuiBao</title>
+    <meta name="author" content="慧宝">
+    <meta name="description" content="{post.description}">
+    <meta name="keywords" content="{post.title},{post.author},{post.tags},{post.categories}" />
+    <meta property="og:title" content="{post.title}" />
+    <meta property="og:site_name" content="慧宝" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="/css/site.min.css" rel="stylesheet">
+    <style>
+    /* Lastly, apply responsive CSS fixes as necessary */
+    @media (max-width: 767px) {
+        #footer {
+            margin-left: -10px;
+            margin-right: -10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    @-ms-viewport       { width: device-width; }
+    body {
+        font-family: "Helvetica Neue", Helvetica, STheiti, "Microsoft YaHei", "微软雅黑", FangSong, "仿宋", Arial, Tahoma, sans-serif, serif;
+        {?static}
+        padding-top: 0px
+        {/static}
+    }
+
+    h1,.h1,h2,.h2,h3,.h3,h4,.h4,.lead {
+        font-family: "Helvetica Neue", Helvetica, STheiti, "Microsoft YaHei", "微软雅黑", FangSong, "仿宋", Arial, Tahoma, sans-serif, serif;
+    }
+    </style>    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    {?static}
+    {:else}
+    <header id="header" class="container">
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">CMS</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                            {#navLinks}
+                                <li {@eq key=section value="{.key}"}class="active"{/eq} ><a href="{.href}">{.label}</a></li>
+                            {/navLinks}
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {?user}
+                        <li><a href="/keystone/signout">登出</a></li>
+                        {:else}
+                        <li><a href="/keystone/signin">登录</a></li>
+                        {/user}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="clearfix"></div>
+    </header>    
+    {/static}
+    <div id='content' class="container">
+      <div class="page-header-wrapper">
+        <!--[if lt IE 9]><div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><strong>提示:</strong>您的浏览器版本太低了,建议升级到 <strong><a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" title="IE9">IE9</a></strong> 以上,本站使用<a href="https://www.google.com/intl/zh-CN/chrome/">Chrome浏览器</a>可以获得最好的显示效果.</div><![endif]-->
+        <div class="page-header">
+          <h1>
+          慧宝 <small>自由而强大</small>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div id="main-col" class="alignleft col-sx-12">
+          <section id='header_widget'>
+          </section>
+          <div id="wrapper">
+            <article>
+              <div id="post" class="post well">
+                <div class="post-content">
+                  {?static}
+                  {:else}
+                  <header class="well-sm">
+                    <i class="fa icon fa-5x pull-left"></i>
+                    <h1 class="title">{post.title}</h1>
+                    <span>由<strong>{post.author}</strong>发表于{@formatDate date="{post.createdAt}" format="YYYY-MM-DD"/}</span>
+                  </header>
+                  <section id='before_content_widget'></section>
+                  {/static}
+                  <div class="entry" data-spy="scroll" data-target="#toc">
+                    {post.content.extendedHtml|s}
+                  </div>
+                  {?static}
+                  {:else}
+                  <footer id="post-meta">
+                    <div class="categories"  style="display:inline">
+                      分类
+                      {#post.categories}
+                        {@eq key=$idx value="1"}
+                        <span class="breadcrumb fa fa-folder">
+                          <li><a href="/product?category={.}" itemprop="url" title="{.}"><span itemprop="title">{.}</span></a></li>
+                        </span>
+                        {:else}
+                        <span class="breadcrumb">
+                          <li><a href="/product?category={.}" itemprop="url" title="{.}"><span itemprop="title">{.}</span></a></li>
+                        </span>
+                        {/eq}
+                      {/post.categories}
+                    </div> | 
+                    <span class="tags">标签 
+                      {#post.tags}
+                      <a href="/product?tag={.}" class="label label-info" itemprop="url" title="{.}"><span itemprop="title">{.}</span></a>
+
+                      {/post.tags}
+                    </span> | 
+                    <span class="time">最近更新:{@formatDate date="{post.updatedAt}" format="YYYY-MM-DD"/}</span>
+                  </footer>
+                  {/static}
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </article>
+            <section id='after_post_widget'>
+              {?static}
+              <div class="bdsharebuttonbox">
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                <a href="#" class="bds_more" data-cmd="more"></a>
+              </div>
+              <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+              {:else}
+              <div class="widget" id="widget_after_post_post_pageNav>">
+                <ul class="pager">
+                  {?post.staticUrl}
+                  <li class="previous"><a href="/product/{post.slug}/deleteStatic" title="删除静态页面">删除静态页面</a></li>
+                  <li class="previous"><a href="/product/{post.slug}/qrcode" title="生成永久二维码">生成二维码</a></li>
+                  {:else}
+                  <li class="previous"><a href="/product/{post.slug}/more?static=true" title="生成静态页面">生成静态页面</a></li>
+                  <li class="previous disabled"><a href="/post/link/"  title="请先生成静态页面">生成二维码</a></li>
+                  {/post.staticUrl}
+                  <li class="previous disabled"><a href="/post/link/"  title="发布到微博">发布到微博</a></li>
+                  <li class="next"><a href="#"  title="返回顶部">返回顶部</a></li>
+                </ul>
+              </div>
+              <div class="widget" id="widget_after_post_related_posts>">
+                <ul class="list-group">
+                  {?post.staticUrl}
+                  <li class="list-group-item"><a href="/{post.staticUrl}">静态页面地址</a></li>
+                  {/post.staticUrl}
+                  {?post.qrCode}
+                  <li class="list-group-item">二维码<img src="{post.qrCode}" alt="二维码" class="img-rounded img-responsive"></li>
+                  {/post.qrCode}
+                </ul>
+              </div>
+              {/static}
+            </section>
+          </div>
+        <!--wapper-->
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <hr>
+    <!-- row END -->
+    </div>
+    
+  </body>
+</html>

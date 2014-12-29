@@ -1,0 +1,114 @@
+/* inspired by http://yihui.name/cn/ */
+body{padding-top:50px;padding-bottom:60px;font-size:14px;font-family:"Microsoft YaHei";}
+a{text-decoration: none;color: #19B6E5;}
+a:hover{text-decoration: none;color: #19B6E5;opacity: .77;}
+.archive{list-style:none;line-height:28px;margin-bottom: 5px;padding: 5px;padding-left:35px;}
+.archive h3{margin:0.5em 0;}
+.archive time{float:left;font-size:14px;color:#999999;margin-right:1.2em;}
+.l_head{box-shadow:0px 1px 4px #888;}
+.r_head{box-shadow:0px 1px 4px #888;position: absolute;top: 10px;right: 10px;}
+.post{margin-bottom: 20px;padding:15px;}
+.comment{margin-bottom: 5px;padding: 15px;}
+.block{position: relative;overflow: hidden;background: #fcfcfa;box-shadow: 0 4px 12px rgba(100, 100, 100, 0.3);}
+.block-maxHeight{max-height:350px;}
+
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #080808;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin .form-group-no-margin {
+    margin-bottom: 0px;
+}
+
+.input-first {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+.input-last {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.input-betw {
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+
+
+#tagscloud{width:100%;height:200px;position:relative;font-size:14px;color:#333;margin:0px auto 0;text-align:center;}
+#tagscloud a{position:absolute;top:0px;left:0px;color:#333;font-family:Arial;text-decoration:none;}
+#tagscloud a:hover{color:#fff;padding:5px;display:block;background:#D02F53;}
+#tagscloud a.tagc1{margin:0 10px 15px 0;line-height:18px;width:65px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#666;color:#fff;}
+#tagscloud a.tagc2{margin:0 10px 15px 0;line-height:18px;width:60px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#F16E50;color:#fff;}
+#tagscloud a.tagc3{margin:0 10px 15px 0;line-height:18px;width:60px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#929af1;color:#fff;}
+#tagscloud a.tagc4{margin:0 10px 15px 0;line-height:18px;width:60px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#8523f1;color:#fff;}
+#tagscloud a.tagc5{margin:0 10px 15px 0;line-height:18px;width:70px;text-align:center;font-size:12px;padding:1px 5px;white-space:nowrap;display:inline-block;border-radius:3px;background:#006633;color:#fff;}
+
+
+
+.editor {
+    margin-top: 10px;
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 4px;
+    box-sizing: content-box;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+    overflow: scroll;
+    outline: none;
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+}
+
+
+
+/*about*/
+.AbDdIndus{font-family:"微软雅黑"; color:#f67813; }
+.AbDdIndus div{padding:20px 30px 0 50px;font-size:16px; line-height:30px; text-indent:2em;}
+.AbDdIndus span{ font-size:65px; position:absolute;font-family:"Times New Roman";}
+.AbDdInfo h3{ font-size:16px; color:#7c7c7c; line-height:35px;}

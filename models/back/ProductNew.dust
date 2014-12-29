@@ -1,0 +1,28 @@
+//供应商表
+"use strict";
+var mongoose = require('mongoose');
+var ObjectId = mongoose.Schema.Types.ObjectId;
+var updatedTimestamp = require('mongoose-updated_at');
+var Error = mongoose.Error;
+var validator = require('../lib/validator');
+
+var PorductNewSchema = new mongoose.Schema({
+    searialNo : String,      //编号
+    proudctName : String,      //产品名称
+    proudctCode : String,      //产品代码
+    proposalPurpose : String,      //投保目的（亮点）
+    insuranceTime : String,     //保险期限
+    applicableUser : String,      //适用人群
+    characteristic : String,      //产品特色
+    desc :String,        		// 产品描述
+    productImg : String,       // 产品图片
+    agentName : String,            //代理人
+    advice:String,               //产品咨询
+    claimServer:String,           //理赔服务
+    commonQuestion:String        //常见问题
+}, { collection: 'productNew' });
+
+PorductNewSchema.plugin(updatedTimestamp);
+
+
+module.exports = mongoose.model('ProductNew', PorductNewSchema);

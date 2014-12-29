@@ -1,0 +1,300 @@
+{>"layouts/e_site" /}
+
+{<content}
+
+
+<div data-ride="carousel" class="carousel slide" id="carousel-generic">
+    <!--<ol class="carousel-indicators">-->
+        <!--<li class="" data-slide-to="0" data-target="#carousel-generic"></li>-->
+        <!--<li data-slide-to="1" data-target="#carousel-generic" class=""></li>-->
+        <!--<li data-slide-to="1" data-target="#carousel-generic" class=""></li>-->
+        <!--<li data-slide-to="2" data-target="#carousel-generic" class="active"></li>-->
+    <!--</ol>-->
+    <div role="listbox" class="carousel-inner">
+        <div class="item active one">
+            <div class="container">
+                <div class="pull-left p-rel">
+                    <span class="talk1"></span>
+
+                    <img src="/images/men.png">
+                </div><!--end one-left-->
+                <form class="form-horizontal" method="post" id="whoForm" role="form" action="/insurance">
+                    <input type="hidden" name="_csrf" value="{_csrf}"/>
+                    <div class="pull-right one-right p-rel">
+                    <h3>还没保险，看这里</h3>
+                    <span class="arrow-1"></span>
+                    <ul class="list-unstyled bao-list">
+                        <li>
+                            <label class="col-md-2">给谁投保</label>
+                            <div class="col-md-4">                                
+                                {@baseCode id="forWho"  name="forWho" base="forWho"/}
+                            </div><!--end col-md-3-->
+                            <div class="radio col-md-4">
+                                <label>
+                                    <input type="radio" value="1" id="optionsRadios1" name="optionsRadios">
+                                    男
+                                </label>&nbsp;&nbsp;
+                                <label>
+                                    <input type="radio" value="2" id="optionsRadios2" name="optionsRadios">
+                                    女
+                                </label>
+                            </div>
+
+                        </li>
+                        <li>
+                            <label class="col-md-2">出生日期</label>
+                            <div class="col-md-4">
+                                <select class="form-control" name="year">
+                                    <option>1980</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-control" name="month">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                        </li>
+                        <li>
+                            <label class="col-md-2">联系方式</label>
+                            <div class="col-md-8">
+                                <input value="请填写手机/邮箱" name="telephone" class="form-control">
+                            </div>
+                        </li>
+                        <li class="btn-area"><button class="btn btn-warning">抢先预约方案顾问</button></li>
+                    </ul>
+                    </div><!--end one-right-->
+                </form>
+            </div><!--end container-->
+        </div>
+        <div class="item two">
+            <div class="container">
+                <div class="info-text">
+                    <h2>有保险，防忽悠</h2>
+                    <p class="mt10">随着保险市场化的发展，人们风险防范意识
+                        的增强，购买保险已成为很多老百姓生活的一部
+                        分。但就目前来看，个别保险公司和代理人为了
+                        牟取暴利，销售保险时设下陷阱，以致于...</p>
+                        <form role="form" class="form-horizontal" action="/policy">
+                            <input type="hidden" name="_csrf" value="{_csrf}" />
+                            <button class="btn btn-warning mt20">防忽悠猛戳我</button>
+                        </form>
+                </div>
+            </div><!--end container-->
+        </div>
+
+    </div>
+    <a data-slide="prev" role="button" href="#carousel-generic" class="left carousel-control">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a data-slide="next" role="button" href="#carousel-generic" class="right carousel-control">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><!--end slide-->
+
+<div class="container">
+    <h3 class="h-title">专业顾问
+        <a class="pull-right small" href="/consultant">更多...</a>
+    </h3>
+
+    <div class="m_box_body e_h150">
+        <div class="e_prev"></div>
+        <div class="e_content">
+            <div class="e_content_list">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="media">
+                            <a href="/consultant-detail" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">方金宝</h4>
+                                <p class="h5 orange">“您的满意，我的追求...”</p>
+                                <p class="info">
+                                    <span>专长：</span>车险、一家三口保险方案定制<br>
+                                    <span>荣誉：</span> 优秀代理人，全国保费第一<br>
+                                    <span>属性：</span>保险公司、代理公司<br>
+                                    <span>其他技能：</span>会开车、可代驾、周一有空<br>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <a href="/consultant-detail" class="pull-left">
+                                <img src="/images/1353338978870.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">卢桂任</h4>
+                                <p class="h5 orange">坚持诚信、专业，也因此认识了...</p>
+                                <p class="info">
+                                    <span>专长：</span>少儿保险、医疗保险、人寿保险<br>
+                                    <span>荣誉：</span> 优秀代理人，全国保费第一<br>
+                                    <span>属性：</span>安联保险集团<br>
+                                    <span>其他技能：</span>理财,开车,周五有空可代驾<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <a href="/consultant-detail" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">方金宝</h4>
+                                <p class="h5 orange">“您的满意，我的追求...”</p>
+                                <p class="info">
+                                    <span>专长：</span>车险、一家三口保险方案定制<br>
+                                    <span>荣誉：</span> 优秀代理人，全国保费第一<br>
+                                    <span>属性：</span>保险公司、代理公司<br>
+                                    <span>其他技能：</span>会开车、可代驾、周一有空<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>                    
+                    <li>
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">方金宝</h4>
+                                <p class="h5 orange">“您的满意，我的追求...”</p>
+                                <p class="info">
+                                    <span>专长：</span>车险、一家三口保险方案定制<br>
+                                    <span>荣誉：</span> 优秀代理人，全国保费第一<br>
+                                    <span>属性：</span>保险公司、代理公司<br>
+                                    <span>其他技能：</span>会开车、可代驾、周一有空<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">方金宝</h4>
+                                <p class="h5 orange">“您的满意，我的追求...”</p>
+                                <p class="info">
+                                    <span>专长：</span>车险、一家三口保险方案定制<br>
+                                    <span>荣誉：</span> 优秀代理人，全国保费第一<br>
+                                    <span>属性：</span>保险公司、代理公司<br>
+                                    <span>其他技能：</span>会开车、可代驾、周一有空<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">方金宝</h4>
+                                <p class="h5 orange">“您的满意，我的追求...”</p>
+                                <p class="info">
+                                    <span>专长：</span>车险、一家三口保险方案定制<br>
+                                    <span>荣誉：</span> 优秀代理人，全国保费第一<br>
+                                    <span>属性：</span>保险公司、代理公司<br>
+                                    <span>其他技能：</span>会开车、可代驾、周一有空<br>
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div><!--e_convent_list end-->
+        </div><!--e_convent end-->
+        <div class="e_next"></div>
+    </div><!--end m_box_body-->
+</div><!--end container-->
+<div class="container">
+    <h3>热销产品</h3>
+    <div class="row knowledge">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/images/comments.png" style="width: 128px;height:117px">
+                <div class="caption">
+                    <p>投保机动车辆保险的被保险人应该履行哪些义务？</p>
+                    <p> 投保车辆保险后的义务——汽车保养</p>
+                    <p>  减少车辆事故的帮手——大视野后视镜的选择和使用</p>
+                    <p>  安全驾驶远离索赔—— 注意你的情绪盲点</p>
+                    <p>  安全驾驶之夏季谨防驾车综合症</p>
+                    <p class="text-right"><a href="#">更多...</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/images/accout.png" style="width: 128px;height:117px">
+                <div class="caption">
+                    <p>投保机动车辆保险的被保险人应该履行哪些义务？</p>
+                    <p> 投保车辆保险后的义务——汽车保养</p>
+                    <p>  减少车辆事故的帮手——大视野后视镜的选择和使用</p>
+                    <p>  安全驾驶远离索赔—— 注意你的情绪盲点</p>
+                    <p>  安全驾驶之夏季谨防驾车综合症</p>
+                    <p class="text-right"><a href="#">更多...</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="/images/tips.png" style="width: 128px;height:117px">
+                <div class="caption">
+                    <p>投保机动车辆保险的被保险人应该履行哪些义务？</p>
+                    <p> 投保车辆保险后的义务——汽车保养</p>
+                    <p>  减少车辆事故的帮手——大视野后视镜的选择和使用</p>
+                    <p>  安全驾驶远离索赔—— 注意你的情绪盲点</p>
+                    <p>  安全驾驶之夏季谨防驾车综合症</p>
+                    <p class="text-right"><a href="#">更多...</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end container-->
+<div class="container">
+    <div class="adv">
+        <a href="http://www.95505.cn/FastCalculation.jhtml" target="_blank">
+            <img src="/images/adv.jpg">
+        </a>
+    </div>
+</div><!--end container-->
+<div class="container">
+    <h3>友情链接</h3>
+    <ul class="list-unstyled friend-list">
+        <li><a href="#"><img src="/images/2597051425.gif"></a>  </li> 
+        <li><a href="#"><img src="/images/2637697867.jpg"></a>  </li>
+        <li><a href="#"><img src="/images/2637771753.gif"></a>  </li>
+        <li><a href="#"><img src="/images/jianxin.jpg"></a>  </li>
+        <li><a href="#"><img src="/images/2637828740.jpg"></a>  </li>
+        <li><a href="#"><img src="/images/2597096447.gif"></a>  </li>
+        <li><a href="#"><img src="/images/xinhua.jpg"></a>  </li>
+        <li><a href="#"><img src="/images/2640261267.jpg"></a>  </li>
+        <li><a href="#"><img src="/images/zhongguorenshou.jpg"></a>  </li>
+        <li><a href="#"><img src="/images/2597061196.gif"></a>  </li>
+        <li><a href="#"><img src="/images/1_2597038548.gif"></a>  </li>        
+        <li><a href="#"><img src="/images/2597102200.gif"></a>  </li>        
+        <li><a href="#"><img src="/images/2597026174.gif"></a>  </li>
+        <li><a href="#"><img src="/images/2597046676.gif"></a>  </li>           
+    </ul>
+</div><!--end container-->
+
+{/content}

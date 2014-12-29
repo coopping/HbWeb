@@ -1,0 +1,48 @@
+{>"layouts/master" /} 
+{<content}
+<div class="panel panel-primary">
+  <div class="panel-heading">{title}</div>
+  <div class="panel-body">
+        {>"admin/user/_form" type="addNew"/}
+    </div>
+</div>
+{/content}
+{<script}
+<script src="/js/jquery.complexify.js"></script>
+<script type="text/javascript">
+    
+    
+    function showRoleInfo() {
+        $("[name='user[roles]']").bootstrapSwitch('onText','已分配');
+        $("[name='user[roles]']").bootstrapSwitch('offText', '未分配');        
+    }
+      
+    
+    $(function() {
+        loadProvinces();
+        showRoleInfo();
+        $("#userPassword").complexify({}, function(valid, complexity) {
+            if (valid) {
+                $('.progress-bar').removeClass('progress-bar-warning').addClass('progress-bar-success').css('width', complexity+'%').attr('aria-valuenow', complexity);
+            } else {
+                $('.progress-bar').removeClass('progress-bar-success').addClass('progress-bar-warning').css('width', complexity+'%').attr('aria-valuenow', complexity);               
+            }
+            
+        });
+        
+        $("#returnButton").attr("href", "/admin/system/auth/users");
+        $("#userInfoForm").validate({
+            submitHandler: function(form) {
+                var selectedElms = $('#branchTree').jstree("get_selected", true);
+                $.each(selectedElms, function() {
+                    $('#oprBranches').append('<input type="hidden" name="user[oprBranches]" class="form-control" value="' + this.id + '">');
+                });
+                $(":button").attr("disabled", "true");
+                form.submit();
+            },
+            focusCleanup: true
+        });
+    });
+
+</script>
+{/script}

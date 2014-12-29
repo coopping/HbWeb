@@ -1,0 +1,243 @@
+{>"layouts/e_site" /}
+
+{<content}
+<div class="container">
+    <article class="select-term">
+        <h3>条件筛选</h3>
+        <section>
+            <div class="row">
+                <div class="col-md-2">类型</div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">财产险</a>
+                    <a href="javascript:void(0)">寿险</a>
+                    <a href="javascript:void(0)">理财</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">性别</div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">男</a>
+                    <a href="javascript:void(0)">女</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">地区</div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">北京</a>
+                    <a href="javascript:void(0)">上海</a>
+                    <a href="javascript:void(0)">广州</a>
+                    <a href="javascript:void(0)">深圳</a>
+                    <a href="javascript:void(0)">南京</a>
+                    <a href="javascript:void(0)">合肥</a>
+                    <a href="javascript:void(0)">成都</a>
+                    <a href="javascript:void(0)">西安</a>
+                    <a href="javascript:void(0)">广州</a>
+                    <a href="javascript:void(0)">苏州</a>
+                    <a href="javascript:void(0)">无锡</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">保险品牌</div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">人保</a>
+                    <a href="javascript:void(0)">平安</a>
+                    <a href="javascript:void(0)">太平</a>
+                    <a href="javascript:void(0)">国华</a>
+                    <a href="javascript:void(0)">天安</a>
+                    <a href="javascript:void(0)">利安</a>
+                    <a href="javascript:void(0)">阳光</a>
+                    <a href="javascript:void(0)">泰康</a>
+                    <a href="javascript:void(0)">天平</a>
+                    <div class="dropdown">
+                        <button class="btn btn-default more" type="button">
+                            more
+                            <span class="caret"></span>
+                        </button>
+                        <div class="panel panel-default dropdown-menu more-select">
+                            <div class="panel-heading text-center">
+                                <span class="pull-left">更多地区</span>
+                                <span>
+                                    您已经选择地区： <strong class="blue">上海</strong>
+                                </span>
+                                <span class="glyphicon glyphicon-ok js-glyphicon-ok pull-right"></span>
+                            </div>
+                            <div class="panel-body more-type">
+                                <div class="row">
+                                    <div class="col-md-2 orange">华北地区</div>
+                                    <div class="col-md-10">
+                                        <a href="javascript:void(0)">北京</a>
+                                        <a href="javascript:void(0)">上海</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">深圳</a>
+                                        <a href="javascript:void(0)">南京</a>
+                                        <a href="javascript:void(0)">合肥</a>
+                                        <a href="javascript:void(0)">成都</a>
+                                        <a href="javascript:void(0)">西安</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">苏州</a>
+                                        <a href="javascript:void(0)">无锡</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 orange">中部地区</div>
+                                    <div class="col-md-10">
+                                        <a href="javascript:void(0)">北京</a>
+                                        <a href="javascript:void(0)">上海</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">深圳</a>
+                                        <a href="javascript:void(0)">南京</a>
+                                        <a href="javascript:void(0)">合肥</a>
+                                        <a href="javascript:void(0)">成都</a>
+                                        <a href="javascript:void(0)">西安</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">苏州</a>
+                                        <a href="javascript:void(0)">无锡</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 orange">华东地区</div>
+                                    <div class="col-md-10">
+                                        <a href="javascript:void(0)">北京</a>
+                                        <a href="javascript:void(0)">上海</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">深圳</a>
+                                        <a href="javascript:void(0)">南京</a>
+                                        <a href="javascript:void(0)">合肥</a>
+                                        <a href="javascript:void(0)">成都</a>
+                                        <a href="javascript:void(0)">西安</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">苏州</a>
+                                        <a href="javascript:void(0)">无锡</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <!--end select-term-->
+    <article class="mt30">
+        <h3>金牌保险顾问</h3>
+        <section>
+            <div class="row">
+                <div class="col-md-9 consultant-list">
+                    {#agents}
+                    <div class="media">
+                        <a href="/website/consultant/{_id}/consultant-detail" class="pull-left">
+                            <img src="{headerImg}" style="width: 125px;height:145px"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                {agentNname}
+                                <small class="orange">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    “您的满意，我的追求...”
+                                </small>
+                            </h4>
+                            <p class="info">                                
+                                <span>荣誉：</span>
+                                优秀代理人，全国保费第一
+                                <br>
+                                <span>所属公司：</span>
+                                {company}
+                                <br>
+                                <span>服务区域：</span>
+                                {serviceArea}
+                                <br>
+                                <span>专长：</span>
+                                {skilled}
+                                <br>
+                                <span>自我介绍：</span>
+                                {intruduction}
+                                <br></p>
+                        </div>
+                    </div>
+                    <!--end media-->
+                    {/agents}
+                    <ul class="pagination"></ul>
+
+                </div>
+
+                <div class="col-md-3 consultant-article-list">
+                    <div class="list-group">
+                        <a href="javascript:void(0)" class="list-group-item active">
+                            保险知识
+                            <span class="pull-right">More</span>
+                        </a>
+                        <a href="javascript:void(0)" class="list-group-item">01. 保监会起草互联网保险业务监管暂行办法？</a>
+                        <a href="javascript:void(0)" class="list-group-item">02. 财产险和寿险购买有何...</a>
+                        <a href="javascript:void(0)" class="list-group-item">03. 买保险为什么要找代理？</a>
+                        <a href="javascript:void(0)" class="list-group-item">04. 医疗保险报销有时限吗？</a>
+                        <a href="javascript:void(0)" class="list-group-item">05. 上海医疗保险缴费年限、缴费比例</a>
+                        <a href="javascript:void(0)" class="list-group-item">06. 航空意外险和飞机保险有什么区别</a>
+                        <a href="javascript:void(0)" class="list-group-item">07. 保障我们病有所“医”的医疗保险</a>
+                        <a href="javascript:void(0)" class="list-group-item">08. 如何买到最好的保险</a>
+                        <a href="javascript:void(0)" class="list-group-item">09. 
+                        定期寿险 低收入人群最爱的保险产品</a>
+                        <a href="javascript:void(0)" class="list-group-item">10. 
+                        意外险购买 返还型和消费型哪个好</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </article>
+
+</div>
+<!--end container-->
+<br>
+{/content}
+{<script}
+<script type="text/javascript">
+$(function(){
+        $('.select-term>section>.row>.col-md-10>a').click(function(){
+            $(this).addClass('select').siblings().removeClass('select')
+        });
+
+        $('.select-term>section>.row>.col-md-10>a:first-child').addClass('select');
+        $('button.more').click(function(){
+            $(this).parent('.dropdown').toggleClass('open');
+        });
+        $('.js-glyphicon-ok').click(function(){
+            $(this).parents('.dropdown').removeClass('open')
+        });
+
+        var options = {
+            currentPage: {page},
+            bootstrapMajorVersion: 3,
+            totalPages: {pageCount},
+            pageUrl: function(type, page, current) {
+                $('.pagination').addClass("pull-right");
+                return '/website/consultant?page=' + page;
+            },
+            itemContainerClass: function(type, page, current) {
+                return (page === current) ? "disabled" : "pointer-cursor";
+            },
+            itemTexts: function(type, page, current) {
+                switch (type) {
+                    case "first":
+                        return "<<";
+                    case "prev":
+                        return "<";
+                    case "next":
+                        return ">";
+                    case "last":
+                        return ">>";
+                    case "page":
+                        return page;
+                }
+            }
+        };
+    $('.pagination').bootstrapPaginator(options);
+    $('.pagination').addClass("pull-right");
+});
+</script>
+{/script}

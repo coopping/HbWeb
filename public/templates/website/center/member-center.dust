@@ -1,0 +1,301 @@
+{>"layouts/mypage" /}
+
+{<content}
+    <div class="pull-right member-info col-md-9">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="media media-info">
+                            <a href="javascript:void(0)" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 125px;height:145px">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">欢迎来到方金宝理财工作室！&nbsp;<span class="orange glyphicon glyphicon-pencil"></span>
+                                </h4>
+                                <ul class="list-unstyled info-detail">
+                                    <li>
+                                        <img src="/images/taiping-logo.png" style="width: 141px;">
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-thumbs-up"></span>
+                                        <h4>
+                                            <small>专长领域：</small>
+                                            <span class="orange">寿险、理财险</span>
+                                        </h4>
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-map-marker"></span>
+                                        <h4>
+                                            <small>服务地区：</small>
+                                            <span class="orange">上海浦东</span>
+                                        </h4>
+                                    </li>
+                                    <li><span class="glyphicon glyphicon-time"></span>
+                                        <h4>
+                                            <small>从业年限：</small>
+                                            <span class="orange">4年</span>
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--end media-->
+                    </div><!--end col-md-8-->
+                    <div class="col-md-4 ">
+                        <div class="user-ry">
+                            <h3 class="orange">
+                                <span class="icon-ry"></span>个人荣誉
+                            </h3>
+                            <ul class="list-unstyled">
+                                <li><span class="icon-star"></span> <em>上海市优秀保险顾问</em></li>
+                                <li><span class="icon-star"></span> <em>保险业内标杆人物</em></li>
+                                <li> <span class="icon-star"></span> <em>2014年华东地区金牌顾问称号</em></li>
+                                <li> <span class="icon-star"></span> <em>2013年代理费用上海最高顾问</em></li>
+                            </ul>
+                        </div><!--end user-ry-->
+                    </div><!--end col-md-4-->
+                </div>
+
+                <div class="mt30">
+                    <div class="orange-box clearfix">
+                        <div class="col-md-6">
+                            <div id="container" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="container2014" style="min-width: 310px; max-width: 400px; height: 300px; margin: 0 auto"></div>
+                        </div>
+                    </div><!--end col-md-12-->
+                </div>
+            </div><!--end member-info-->
+{/content}
+
+{<script}
+<script src="/js/js-charts/highcharts.js"></script>
+<script src="/js/js-charts/highcharts-more.js"></script>
+<script src="/js/js-charts/modules/exporting.js"></script>
+<script type="text/javascript">
+            $(function () {
+
+                $('#container').highcharts({
+
+                            chart: {
+                                type: 'gauge',
+                                plotBackgroundColor: null,
+                                plotBackgroundImage: null,
+                                plotBorderWidth: 0,
+                                plotShadow: false
+                            },
+
+                            title: {
+                                text: '2013财务报表'
+                            },
+
+                            pane: {
+                                startAngle: -150,
+                                endAngle: 150,
+                                background: [{
+                                    backgroundColor: {
+                                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                                        stops: [
+                                            [0, '#FFF'],
+                                            [1, '#333']
+                                        ]
+                                    },
+                                    borderWidth: 0,
+                                    outerRadius: '109%'
+                                }, {
+                                    backgroundColor: {
+                                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                                        stops: [
+                                            [0, '#333'],
+                                            [1, '#FFF']
+                                        ]
+                                    },
+                                    borderWidth: 1,
+                                    outerRadius: '107%'
+                                }, {
+                                }, {
+                                    backgroundColor: '#DDD',
+                                    borderWidth: 0,
+                                    outerRadius: '105%',
+                                    innerRadius: '103%'
+                                }]
+                            },
+
+                            yAxis: {
+                                min: 0,
+                                max: 200,
+
+                                minorTickInterval: 'auto',
+                                minorTickWidth: 1,
+                                minorTickLength: 10,
+                                minorTickPosition: 'inside',
+                                minorTickColor: '#666',
+
+                                tickPixelInterval: 30,
+                                tickWidth: 2,
+                                tickPosition: 'inside',
+                                tickLength: 10,
+                                tickColor: '#666',
+                                labels: {
+                                    step: 2,
+                                    rotation: 'auto'
+                                },
+                                title: {
+                                    text: 'km/h'
+                                },
+                                plotBands: [{
+                                    from: 0,
+                                    to: 120,
+                                    color: '#55BF3B' 
+                                }, {
+                                    from: 120,
+                                    to: 160,
+                                    color: '#DDDF0D' 
+                                }, {
+                                    from: 160,
+                                    to: 200,
+                                    color: '#DF5353' 
+                                }]
+                            },
+
+                            series: [{
+                                name: 'Speed',
+                                data: [80],
+                                tooltip: {
+                                    valueSuffix: ' km/h'
+                                }
+                            }]
+
+                        },
+                        function (chart) {
+                            if (!chart.renderer.forExport) {
+                                setInterval(function () {
+                                    var point = chart.series[0].points[0],
+                                            newVal,
+                                            inc = Math.round((Math.random() - 0.5) * 20);
+
+                                    newVal = point.y + inc;
+                                    if (newVal < 0 || newVal > 200) {
+                                        newVal = point.y - inc;
+                                    }
+
+                                    point.update(newVal);
+
+                                }, 3000);
+                            }
+                        });
+            });
+</script>
+<script type="text/javascript">
+    $(function () {
+
+        $('#container2014').highcharts({
+
+                    chart: {
+                        type: 'gauge',
+                        plotBackgroundColor: null,
+                        plotBackgroundImage: null,
+                        plotBorderWidth: 0,
+                        plotShadow: false
+                    },
+
+                    title: {
+                        text: '2014财务报表'
+                    },
+
+                    pane: {
+                        startAngle: -150,
+                        endAngle: 150,
+                        background: [{
+                            backgroundColor: {
+                                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                                stops: [
+                                    [0, '#FFF'],
+                                    [1, '#333']
+                                ]
+                            },
+                            borderWidth: 0,
+                            outerRadius: '109%'
+                        }, {
+                            backgroundColor: {
+                                linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+                                stops: [
+                                    [0, '#333'],
+                                    [1, '#FFF']
+                                ]
+                            },
+                            borderWidth: 1,
+                            outerRadius: '107%'
+                        }, {
+                        }, {
+                            backgroundColor: '#DDD',
+                            borderWidth: 0,
+                            outerRadius: '105%',
+                            innerRadius: '103%'
+                        }]
+                    },
+
+                    yAxis: {
+                        min: 0,
+                        max: 200,
+
+                        minorTickInterval: 'auto',
+                        minorTickWidth: 1,
+                        minorTickLength: 10,
+                        minorTickPosition: 'inside',
+                        minorTickColor: '#666',
+
+                        tickPixelInterval: 30,
+                        tickWidth: 2,
+                        tickPosition: 'inside',
+                        tickLength: 10,
+                        tickColor: '#666',
+                        labels: {
+                            step: 2,
+                            rotation: 'auto'
+                        },
+                        title: {
+                            text: 'km/h'
+                        },
+                        plotBands: [{
+                            from: 0,
+                            to: 120,
+                            color: '#55BF3B' 
+                        }, {
+                            from: 120,
+                            to: 160,
+                            color: '#DDDF0D' 
+                        }, {
+                            from: 160,
+                            to: 200,
+                            color: '#DF5353' 
+                        }]
+                    },
+
+                    series: [{
+                        name: 'Speed',
+                        data: [80],
+                        tooltip: {
+                            valueSuffix: ' km/h'
+                        }
+                    }]
+
+                },
+                function (chart) {
+                    if (!chart.renderer.forExport) {
+                        setInterval(function () {
+                            var point = chart.series[0].points[0],
+                                    newVal,
+                                    inc = Math.round((Math.random() - 0.5) * 20);
+
+                            newVal = point.y + inc;
+                            if (newVal < 0 || newVal > 200) {
+                                newVal = point.y - inc;
+                            }
+
+                            point.update(newVal);
+
+                        }, 3000);
+                    }
+                });
+    });
+</script>
+
+{/script}

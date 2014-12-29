@@ -1,0 +1,88 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+        <article class="mt30">
+            <section class="consultation-detail">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="title">
+                            <span class="h3">聚富步步高保险计划</span>
+                            <span class="pull-right">添加日期：2014-08-06         人气：296</span>
+                        </div>
+                        <div class="info mt20">                            
+                            保障利益：<br>
+                            1．疾病身故或全残保险金<br>
+                            被保险人于本合同生效之日起180日内(含180日当日)因疾病导致身故或全残，我们无息退还所交保险费，本合同终
+                            止。 被保险人于本合同生效之日起180日后因疾病导致身故或全残，我们按被保险人疾病身故或全残时本合同项下保
+                            单账户价值的105%给付疾病身故或全残保险金，本合同终止。
+                            2. 意外伤害身故或全残保险金<br>
+                            被保险人发生意外伤害事故，且自该事故发生之日起180日内（含180日当日）因该意外伤害事故导致身故或全残的，我
+                            们按以下两项中的较小者给付意外伤害身故或全残保险金，本合同终止。<br>
+                            （1）被保险人身故或全残时本合同项下保单账户价值的205%；<br>
+                            （2）被保险人身故或全残时本合同项下保单账户价值的105%与50万元之和。若被保险<br>
+                            人身故或全残时年龄超过65周岁（含65周岁），则为本合同项下保单账户价值的 105%与5000元之和。<br>
+                            3. 交通工具意外伤害身故或全残保险金<br>
+                            被保险人以乘客身份乘坐客运公共交通工具期间遭受意外伤害事故，且自该事故发生之日起180日
+                            内（含180日当日）因该意外伤害事故导致身故或全残的，我们在按 上述约定给付意外伤害身故或全残保险金的同时，
+                            再按以下两项中的较小者给付交通工具意外身故或全残保险金，本合同终止<br>
+                            （1）被保险人身故或全残时本合同项下的保单账户价值；<br>
+                            （2）50万元。若被保险人身故或全残时年龄超过65周岁（含65周岁），则为5000元。<br>
+                            责任免除：<br>
+                            因下列情形之一导致被保险人身故的，我们不承担给付身故保险金的责任：<br>
+                            (1) 投保人对被保险人的故意杀害、故意伤害；<br>
+                            (2) 被保险人故意犯罪或者抗拒依法采取的刑事强制措施；<br>
+                            (3) 被保险人自本合同成立或者合同效力恢复之日起2年内自杀，但被保险人自杀时为无民事行为能力人的除外；<br>
+
+                        </div>
+                        
+                    </div><!--end col-md-9-->
+                    <div class="col-md-3">
+                        <div class="media">
+                            <a href="#" class="pull-left">
+                                <img src="/images/img.jpg" style="width: 80px;">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="media-heading"><span class="orange">金牌代理</span>  <span class="blue"> 方金宝</span>   </h5>
+                                    <ul class="list-unstyled">
+                                        <li>专长领域：<span class="orange">寿险、理财</span></li>
+                                        <li> 从业年限：<span class="orange">4年</span></li>
+                                        <li>服务地区：<span class="orange">上海浦东</span></li>
+                                        <li class="text-right"> <a href="#"> >> 详情</a></li>
+                                    </ul>
+
+                            </div>
+                        </div><!--end media-->
+                        <div class="panel panel-default mt20">
+                            <div class="panel-heading "><span class="h4">车险文摘</span>
+                                <a href="#" class="pull-right more">更多...</a>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <a href="consultation-detail.html">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a> </li>
+                                <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                                <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                                <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                                <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                            </ul>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading "><span class="h4">车险文摘</span><span class="orange small">Hot</span>
+                                <a href="#" class="pull-right more">更多...</a>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <a href="consultation-detail.html">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a> </li>
+                                <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                                <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                                <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                                <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!--end col-md-3-->
+                </div>
+            </section>
+        </article>
+
+    </div><!--end container-->
+<br>
+{/content}

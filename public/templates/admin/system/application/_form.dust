@@ -1,0 +1,42 @@
+    <form class="form-horizontal" method="post" id="applicationForm" role="form">
+        <input type="hidden" name="_csrf" value="{_csrf}" />
+        <div class="form-group">
+            <label for="clientName" class="col-sm-1  control-label">应用名<span class="required-indicator">*</span></label>
+            <div class="col-sm-1 ">
+                <input type="text" name="client[name]" class="form-control" id="clientName" value="{client.name}" required>
+            </div>
+
+            <label for="clientClientID" class="col-sm-1 control-label">应用ID<span class="required-indicator">*</span></label>
+            <div class="col-sm-1">
+                <input type="text" name="client[clientID]" value="{client.clientID}"  class="form-control" id="clientClientID" required>
+            </div>
+            <label for="clientTrusted" class="col-sm-1 control-label">是否受信<span class="required-indicator">*</span></label>
+            <div class="col-sm-1">
+                <select name="client[trusted]" value="{client.trusted}" class="form-control" id="clientTrusted">
+                    <option value="1">是</option>
+                    <option value="0">否</option>
+                </select>
+            </div>
+            <label for="clientScope" class="col-sm-1 control-label">授权范围</label>
+            <div class="col-sm-2">
+                <input type="text" name="client[scope]" value="{client.scope}"  class="form-control" id="clientScope">
+                <p class="help-block">多个授权使用,分隔</p>
+            </div>
+            <label for="clientRedirectURI" class="col-sm-1 control-label">重定向URI<span class="required-indicator">*</span></label>
+            <div class="col-sm-2">
+                <input type="text" name="client[redirectURI]" value="{client.redirectURI}"  class="form-control" id="clientRedirectURI" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4 ">
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary">提交</button>
+                    </div>
+                    <div class="btn-group">
+                        <a id="returnButton" class="btn btn-default">返回</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>

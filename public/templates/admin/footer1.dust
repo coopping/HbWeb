@@ -1,0 +1,21 @@
+   <div class="navbar-fixed-bottom hidden-sm hidden-xs" style="background:url('/images/header-bg.jpg'); color: #ffffff;">
+       <div class="container">
+           <h6 style="font-family: 'Microsoft YaHei'" class="text-right">
+               <!--<span class="glyphicon glyphicon-copyright-mark"></span>
+           CopyLeft-->
+                CopyLeft
+           <small>
+               Thanks
+               <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>
+               ,
+               <a href="http://www.mongodb.org/" target="_blank">MongoDB</a>
+               ,
+               <a href="http://nodejs.org/" target="_blank">Nodejs</a>
+               ,
+               <a href="http://www.bootcss.com/" target="_blank">Bootstrap</a>
+               and
+               <a href="http://expressjs.com/" target="_blank">Express</a>
+           </small>
+       </h6>
+   </div>
+   </div>

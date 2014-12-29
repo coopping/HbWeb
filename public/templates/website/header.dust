@@ -1,0 +1,58 @@
+<header>
+    <div class="topbar">
+        <div class="container">
+            <div class="pull-left"><span>欢迎来到全球领先的第三方保险平台！</span></div>
+            <div class="pull-right">
+                <ul class="list-unstyled user-nav">
+                    <li class="login"><span>专业顾问，请 <a href="/register">注册</a> ｜<a href="/login">登录</a></span></li>
+                    <li class="current">
+                        <span>
+                            <a href="/website/agent/member-center">会员中心</a>
+                        </span>
+                        <span>
+                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                        </span>
+                        <span>
+                            <a href="http://121.40.121.237:8080" target="_blank">服务云平台</a>
+                        </span>
+                    </li>
+                </ul>
+                                
+            </div>
+        </div><!--end container-->
+    </div><!--end topbar-->
+<nav class="nav-bg">
+    <div class="container nav">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="/">
+            <img src="/images/logo.png">
+          </a>
+        </div>
+                       
+        <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="/hot-product">热销产品</a>
+                </li>
+                <li>
+                    <a href="/website/consultant">专业顾问 </a>
+                </li>
+                <li>
+                    <a href="/policy">保单评估</a>
+                </li>
+                <li>
+                    <a href="/insurance">保险测评</a>
+                </li>
+                <li>
+                    <a href="/consultation">专业咨询</a>
+                </li>
+            </ul>
+        
+        </nav>
+    </div><!--end container-->
+</nav>
+</header>

@@ -1,0 +1,103 @@
+{>"policy/templates/_chooseBankForm" style="new" /}
+{>"policy/templates/_chooseBankRelateForm" style="new" /}
+<form class="form-horizontal" method="post" id="addSubForm" role="form">
+    <input type="hidden" name="_csrf" value="{_csrf}"/>
+
+    <div class="form-group">
+        <label for="companyName" class="col-sm-1 control-label">机构名称<span class="required-indicator">*</span></label>
+
+        <div class="col-sm-2">
+            <input type="text" name="branch[name]" class="form-control" id="companyName" value="{branch.name}" required>
+        </div>
+        <label for="branchLevel" class="col-sm-1 control-label">机构级别<span class="required-indicator">*</span></label>
+
+        <div class="col-sm-2">
+            <p class="form-control">{@baseCode code="{branch.levelId}"  base="branchLevel" /}</p>
+            <input type="hidden" name="branch[levelId]" value="{branch.levelId}">
+        </div>
+        {?addTop}
+            <label for="companyAbbr" class="col-sm-1 control-label">机构缩写<span
+                    class="required-indicator">*</span></label>
+
+            <div class="col-sm-2">
+                <input type="text" name="branch[code]" class="form-control" id="branchCode" value="{branch.code}"
+                       required>
+            </div>
+            <label for="branchType" class="col-sm-1 control-label">机构类型<span class="required-indicator">*</span></label>
+
+            <div class="col-sm-2">
+                {@baseCode id="branchType" selectValue="{branch.typeId}" name="branch[typeId]" base="branchType" blank="true" required="true"/}
+            </div>
+        {:else}
+            <label for="companyAbbr" class="col-sm-1 control-label">上级<span class="required-indicator">*</span></label>
+
+            <div class="col-sm-2">
+                <p class="form-control">{parent.code}</p>
+                <input name="parent[abbr]" type="hidden" value="{parent.abbrName}">
+                <input name="parent[code]" type="hidden" value="{parent.code}">
+                <input name="parent[typeId]" type="hidden" value="{parent.typeId}">
+            </div>
+        {/addTop}
+        <label for="branchContact" class="col-sm-1 control-label">联系人</label>
+
+        <div class="col-sm-2">
+            <input type="text" name="branch[contact]" class="form-control" id="branchContact" value="{branch.contact}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="branchTelephone" class="col-sm-1 control-label">联系电话</label>
+
+        <div class="col-sm-2">
+            <input type="isPhone" name="branch[telephone]" class="form-control" id="branchTelephone"
+                   value="{branch.telephone}">
+        </div>
+        <label for="branchMobile" class="col-sm-1 control-label">移动电话</label>
+
+        <div class="col-sm-2">
+            <input type="isMobile" name="branch[mobile]" class="form-control" id="branchMobile" value="{branch.mobile}">
+        </div>
+
+        <label for="branchFax" class="col-sm-1 control-label">传真</label>
+
+        <div class="col-sm-2">
+            <input type="isPhone" name="branch[fax]" class="form-control" id="branchFax" value="{branch.fax}">
+        </div>
+        <label for="branchEmail" class="col-sm-1 control-label">电子邮件</label>
+
+        <div class="col-sm-2">
+            <input type="email" name="branch[email]" class="form-control" id="branchEmail" value="{branch.email}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="branchZip" class="col-sm-1 control-label">邮编</label>
+
+        <div class="col-sm-2">
+            <input type="isZipCode" name="branch[zip]" class="form-control" id="branchZip" value="{branch.zip}">
+        </div>
+        <label for="contactAddr" class="col-sm-1 control-label">联系地址</label>
+
+        <div class="col-sm-2">
+            <input type="text" name="branch[address]" class="form-control" id="contactAddr" value="{branch.address}">
+        </div>
+    </div>
+    <div id="accountInfoDiv">
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-sm-12">
+            <div class="btn-toolbar" role="toolbar">
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </div>
+                <div class="btn-group">
+                    <a id="accoutBtn" class="btn btn-default" >录入收款帐号</a>
+                </div>
+                <div class="btn-group">
+                    <a id="returnButton" class="btn btn-default">返回</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

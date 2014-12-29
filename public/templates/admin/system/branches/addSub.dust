@@ -1,0 +1,76 @@
+{>"layouts/master" /} 
+{<content}
+<div class="panel panel-primary">
+  <div class="panel-heading">信息录入</div>
+  <div class="panel-body">
+		{>"system/branches/_form"/}
+	</div>
+</div>
+{/content}
+{<script}
+<script type="text/javascript" src="/js/jquery-form-json.js"></script>
+<script type="text/javascript" src="/js/duster/clientBaseHelper.js"></script>
+<script type="text/javascript" src="/js/duster/branch/accountInfo.js"></script>
+<script type="text/javascript">
+$(function() {
+    var data = {};
+    
+    dust.render('accountInfo', {accountInfo:data}, function(err, out) {
+        $("#accountInfoDiv").html(out);
+        initBankInfo();
+
+        if (!data.accountNo) {
+            $("#accountInfoDiv :input").attr('disabled', 'true');
+            $("#accountInfoDiv").hide();
+        }
+        if (data.cardType) {
+            $("#accountInfoDiv select[name='cardType']").val(data.cardType);
+        }
+        if (data.bankPayType) {
+            $("#accountInfoDiv select[name='bankPayType']").val(data.bankPayType);
+        }
+        $("#accountInfoDiv input[name='accountNo']").bankInput();
+    });  
+    $("#accoutBtn").click(function(event) {
+        $("#accountInfoDiv").toggle('fast', function() {
+            if ($(this).is(':hidden')) {
+                $("#accountInfoDiv :input").attr('disabled', 'true');
+            } else {
+                $("#accountInfoDiv :input").removeAttr('disabled');
+            }
+        });
+    });
+
+    
+	$("#returnButton").attr("href", "/system/branches/return?id={parent.id}");
+	$("#addSubForm").validate({
+		submitHandler:function(form){
+			$(":button").attr("disabled","true");  
+			form.action = '/system/branches/{parent.id}/addSub';
+            form.submit();
+        },
+        focusCleanup:true
+	});
+	var dataOptions = {
+			format : "yyyy-mm-dd",
+			autoclose : true,
+			language : 'zh-CN',
+			todayHighlight : true
+	};
+	$('.date-default').datepicker(dataOptions);	
+	
+	var businesslicenceStartDate = $('#businesslicenceStartDate').
+	datepicker(dataOptions).on('changeDate', function(e) {
+		businesslicenceEndDate.datepicker('setStartDate', e.date);
+		businesslicenceEndDate.datepicker('update');
+		businesslicenceEndDate.datepicker('show');
+
+	});
+	var businesslicenceEndDate = $('#businesslicenceEndDate').
+	datepicker(dataOptions).on('changeDate', function (e) {
+		businesslicenceStartDate.datepicker('setEndDate', e.date);
+		businesslicenceStartDate.datepicker('update');
+	});
+});	
+</script> 
+{/script}

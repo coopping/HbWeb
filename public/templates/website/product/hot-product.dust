@@ -1,0 +1,391 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="select-term">
+        <h3>
+            条件筛选
+        </h3>
+        <section>
+            <div class="row">
+                <div class="col-md-2">
+                    类型
+                </div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">财产险</a>
+                    <a href="javascript:void(0)">寿险</a>
+                    <a href="javascript:void(0)">理财</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    性别
+                </div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">男</a>
+                    <a href="javascript:void(0)">女</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    地区
+                </div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">北京</a>
+                    <a href="javascript:void(0)">上海</a>
+                    <a href="javascript:void(0)">广州</a>
+                    <a href="javascript:void(0)">深圳</a>
+                    <a href="javascript:void(0)">南京</a>
+                    <a href="javascript:void(0)">合肥</a>
+                    <a href="javascript:void(0)">成都</a>
+                    <a href="javascript:void(0)">西安</a>
+                    <a href="javascript:void(0)">广州</a>
+                    <a href="javascript:void(0)">苏州</a>
+                    <a href="javascript:void(0)">无锡</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    保险品牌
+                </div>
+                <div class="col-md-10">
+                    <a href="javascript:void(0)">全部</a>
+                    <a href="javascript:void(0)">人保</a>
+                    <a href="javascript:void(0)">平安</a>
+                    <a href="javascript:void(0)">太平</a>
+                    <a href="javascript:void(0)">国华</a>
+                    <a href="javascript:void(0)">天安</a>
+                    <a href="javascript:void(0)">利安</a>
+                    <a href="javascript:void(0)">阳光</a>
+                    <a href="javascript:void(0)">泰康</a>
+                    <a href="javascript:void(0)">天平</a>
+                    <div class="dropdown">
+                        <button class="btn btn-default more" type="button">
+                            more
+                            <span class="caret"></span>
+                        </button>
+                        <div class="panel panel-default dropdown-menu more-select">
+                            <div class="panel-heading text-center">
+                                <span class="pull-left">更多地区</span>
+                                <span>您已经选择地区：<strong class="blue">上海</strong></span>
+                                <span class="glyphicon glyphicon-ok js-glyphicon-ok pull-right"></span>
+                            </div>
+                            <div class="panel-body more-type">
+                                <div class="row">
+                                    <div class="col-md-2 orange">
+                                        华北地区
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="javascript:void(0)">北京</a>
+                                        <a href="javascript:void(0)">上海</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">深圳</a>
+                                        <a href="javascript:void(0)">南京</a>
+                                        <a href="javascript:void(0)">合肥</a>
+                                        <a href="javascript:void(0)">成都</a>
+                                        <a href="javascript:void(0)">西安</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">苏州</a>
+                                        <a href="javascript:void(0)">无锡</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 orange">
+                                        中部地区
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="javascript:void(0)">北京</a>
+                                        <a href="javascript:void(0)">上海</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">深圳</a>
+                                        <a href="javascript:void(0)">南京</a>
+                                        <a href="javascript:void(0)">合肥</a>
+                                        <a href="javascript:void(0)">成都</a>
+                                        <a href="javascript:void(0)">西安</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">苏州</a>
+                                        <a href="javascript:void(0)">无锡</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 orange">
+                                        华东地区
+                                    </div>
+                                    <div class="col-md-10">
+                                        <a href="javascript:void(0)">北京</a>
+                                        <a href="javascript:void(0)">上海</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">深圳</a>
+                                        <a href="javascript:void(0)">南京</a>
+                                        <a href="javascript:void(0)">合肥</a>
+                                        <a href="javascript:void(0)">成都</a>
+                                        <a href="javascript:void(0)">西安</a>
+                                        <a href="javascript:void(0)">广州</a>
+                                        <a href="javascript:void(0)">苏州</a>
+                                        <a href="javascript:void(0)">无锡</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article><!--end select-term-->
+    <article class="mt30">
+        <h3>险种列表</h3>
+        <section>
+            <div class="row">
+                <div class="col-md-9 consultant-detail blue-box">
+                    <div class="media">
+                        <a href="javascript:void(0)" class="pull-left clearfix">
+                            <div class="pull-left"><img src="/images/pro-1.png"></div>
+                            <ul class="list-unstyled pull-left ml20">
+                                <li>
+                                    <div>最高保额</div>
+                                    <span class="orange">30.0万</span>
+                                </li>
+                                <li>
+                                    <div>年缴</div>
+                                    <span class="blue"><small>￥</small>4741<small>元</small></span>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <h3 class="text-center">安康无忧两全保险</h3>
+
+                        </a>
+                        <div class="media-body">
+                            <p class="product-type-info">
+                                <span>
+                                    <img src="/images/taiping-logo.png">
+                                </span>
+                                <span class="orange">1000元起售</span>
+                                <span class="orange">10天即领</span>
+                                <span class="orange">终身领取</span>
+                            </p>
+                            <p>
+                                【亲民门槛】1000元起售<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                                【领得多】合同承诺固定领取每年年交保费的28%-41%<br>
+                                【时间长】从投保当年起，终身领取<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3><small>此款产品已有</small><strong class="orange">1888</strong><small>人投保</small></h3>
+                                </div>
+                                <div class="col-md-4 text-right"> <a class="btn-warning btn btn-block" href="/product-detail">查看详情</a></div>
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end media-->
+
+                    <div class="media">
+                        <a href="javascript:void(0)" class="pull-left clearfix">
+                            <div class="pull-left"><img src="/images/pro-1.png"></div>
+                            <ul class="list-unstyled pull-left ml20">
+                                <li>
+                                    <div>最高保额</div>
+                                    <span class="orange">30.0万</span>
+                                </li>
+                                <li>
+                                    <div>年缴</div>
+                                    <span class="blue"><small>￥</small>4741<small>元</small></span>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <h3 class="text-center">安康无忧两全保险</h3>
+
+                        </a>
+                        <div class="media-body">
+                            <p class="product-type-info">
+                                <span>
+                                    <img src="/images/taiping-logo.png">
+                                </span>
+                                <span class="orange">1000元起售</span>
+                                <span class="orange">10天即领</span>
+                                <span class="orange">终身领取</span>
+                            </p>
+                            <p>
+                                【亲民门槛】1000元起售<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                                【领得多】合同承诺固定领取每年年交保费的28%-41%<br>
+                                【时间长】从投保当年起，终身领取<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3><small>此款产品已有</small><strong class="orange">1888</strong><small>人投保</small></h3>
+                                </div>
+                                <div class="col-md-4 text-right"> <a class="btn-primary btn btn-block" href="/product-detail">查看详情</a></div>
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end media-->
+                    <div class="media">
+                        <a href="javascript:void(0)" class="pull-left clearfix">
+                            <div class="pull-left"><img src="/images/pro-1.png"></div>
+                            <ul class="list-unstyled pull-left ml20">
+                                <li>
+                                    <div>最高保额</div>
+                                    <span class="orange">30.0万</span>
+                                </li>
+                                <li>
+                                    <div>年缴</div>
+                                    <span class="blue"><small>￥</small>4741<small>元</small></span>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <h3 class="text-center">安康无忧两全保险</h3>
+
+                        </a>
+                        <div class="media-body">
+                            <p class="product-type-info">
+                                <span>
+                                    <img src="/images/taiping-logo.png">
+                                </span>
+                                <span class="orange">1000元起售</span>
+                                <span class="orange">10天即领</span>
+                                <span class="orange">终身领取</span>
+                            </p>
+                            <p>
+                                【亲民门槛】1000元起售<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                                【领得多】合同承诺固定领取每年年交保费的28%-41%<br>
+                                【时间长】从投保当年起，终身领取<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3><small>此款产品已有</small><strong class="orange">1888</strong><small>人投保</small></h3>
+                                </div>
+                                <div class="col-md-4 text-right"> <a class="btn-primary btn btn-block" href="/product-detail">查看详情</a></div>
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end media-->
+                    <ul class="pagination pull-right">
+                        <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                        <li class="active"><a href="javascript:void(0)">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">»</a></li>
+                    </ul>
+                </div><!--end col-md-9-->
+
+                <div class="col-md-3 consultant-article-list">
+                    <div class="qa-main hot-qa">
+                        <img src="/images/qa-img.png" style="width: 100%">
+                        <div class="qa-list">
+                            <ul class="list-unstyled">
+                                <li>
+                                <div><span class="orange">Q.</span> 投保少儿险，这些误区你都了解吗？</div>
+                                <div><span class="blue"> A. </span><a href="#">误区一：只为孩子购买教育金忽略保障产品...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 2015如何制定子女成长保险计划？</div>
+                                <div><span class="blue"> A. </span><a href="#">据了解，少儿理财类保险适用家庭范围较广...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 不买保险，一辈子能省多少钱？</div>
+                                <div><span class="blue"> A. </span><a href="#">金融业三驾马车：银行催命，保险救命，证券玩命...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 月光族如何巧用保险来理财？</div>
+                                <div><span class="blue"> A. </span><a href="#">月光族，顾名思义，就是每个月都把工资用光...</a></div>
+                            </li>
+                            <li class="blue text-right">
+                                <a href="#">更多。。。</a>
+                                </li>
+                            </ul>
+
+                        </div><!--end qa-list-->
+                    </div><!--end qa-main-->
+
+                    <div class="list-group mt20 company-list">
+                        <div  class="bg">
+                            各家保险公司特点
+                        </div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <strong>天安财险</strong>
+                            <div class="media">
+                                <a href="javascript:void(0)" class="pull-left">
+                                    <img src="/images/c-1.png">
+                                </a>
+                                <div  class="media-body">
+                                    <ul class="list-unstyled">
+                                        <li>  <span class="orange">1.</span>股份制保险公司</li>
+                                        <li>  <span class="orange">2.</span>主营财产险、车险</li>
+                                        <li>  <span class="orange">3.</span>以客户为中心</li>
+                                    </ul>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </li>
+                        <li>
+                            <strong>海康人寿</strong>
+                            <div class="media">
+                                <a href="javascript:void(0)" class="pull-left">
+                                    <img src="/images/c-2.png">
+                                </a>
+                                <div  class="media-body">
+                                    <ul class="list-unstyled">
+                                        <li>  <span class="orange">1.</span>专业、诚信、开创</li>
+                                        <li>  <span class="orange">2.</span>主营医辽、养老</li>
+                                        <li>  <span class="orange">3.</span>帮助客户未雨绸缪</li>
+                                    </ul>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </li>
+                        <li>
+                            <strong>太平保险</strong>
+                            <div class="media">
+                                <a href="javascript:void(0)" class="pull-left">
+                                    <img src="/images/c-3.png">
+                                </a>
+                                <div  class="media-body">
+                                    <ul class="list-unstyled">
+                                        <li>  <span class="orange">1.</span>一个客户一个太平</li>
+                                        <li>  <span class="orange">2.</span>业务范围涵盖广泛</li>
+                                        <li>  <span class="orange">3.</span>85周年</li>
+                                        </ul>
+                                    </div><!--end media-body-->
+                                </div><!--end media-->
+                            </li>
+                            <li class="text-right">
+                                <a href="#">更多...</a>
+                            </li>
+                        </ul>
+                    </div><!--end company-list-->
+
+                </div><!--end col-md-3-->
+            </div>
+        </section>
+    </article>
+
+
+
+</div><!--end container-->
+<br>
+{/content}
+
+{<script}
+<script type="text/javascript">
+    $(function(){
+        $('.select-term>section>.row>.col-md-10>a').click(function(){
+            $(this).addClass('select').siblings().removeClass('select')
+        });
+
+        $('.select-term>section>.row>.col-md-10>a:first-child').addClass('select');
+        $('button.more').click(function(){
+            $(this).parent('.dropdown').toggleClass('open');
+        });
+        $('.js-glyphicon-ok').click(function(){
+            $(this).parents('.dropdown').removeClass('open')
+        });
+    });
+</script>
+{/script}

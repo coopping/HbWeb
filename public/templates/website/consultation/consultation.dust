@@ -1,0 +1,186 @@
+{>"layouts/e_site" /}
+
+{<content}
+
+<div class="container">
+    <article class="mt30">
+        <section class="consultation">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading "><span class="h3">车险</span>&nbsp;&nbsp;<span class="orange">给爱车一个保障</span>
+                            <a href="#" class="pull-right more">更多...</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img src="/images/a-1.jpg" style="width: 212px;height: 120px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="/consultation-detail">解读：第三者责任险你知多少？</a>   </h4>
+                                    <div class="info">
+                                        开车撞到价值上百万的宝马7系，只
+                                        需赔偿100元吗？这听起来很“不可
+                                        思议”的一幕，此前就发生在南京市
+                                        江宁区竹山路：一辆日产GT-R在...
+                                    </div>
+                                </div>
+                            </div><!--end media-->
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a> </li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                        </ul>
+                    </div>
+                 </div><!--end col-md-6-->
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading "><span class="h3">理财保险</span>&nbsp;&nbsp;<span class="orange">攒小钱，赚大钱</span>
+                            <a href="#" class="pull-right more">更多...</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img src="/images/a-2.jpg" style="width: 212px;height: 120px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="/consultation-detail">解读：第三者责任险你知多少？</a>   </h4>
+                                    <div class="info">
+                                        开车撞到价值上百万的宝马7系，只
+                                        需赔偿100元吗？这听起来很“不可
+                                        思议”的一幕，此前就发生在南京市
+                                        江宁区竹山路：一辆日产GT-R在...
+                                    </div>
+                                </div>
+                            </div><!--end media-->
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a> </li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-md-6-->
+            </div><!--end row-->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/images/a-5.jpg" style="width: 492px;height: 154px;">
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/a-6.jpg" style="width: 492px;height: 154px;">
+                </div>
+            </div><!--end row-->
+            <div class="row mt20">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading "><span class="h3">意外险</span>&nbsp;&nbsp;<span class="orange">给家人安心，给自己保障</span>
+                            <a href="#" class="pull-right more">更多...</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img src="/images/a-3.jpg" style="width: 212px;height: 120px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="/consultation-detail">解读：第三者责任险你知多少？</a>   </h4>
+                                    <div class="info">
+                                        开车撞到价值上百万的宝马7系，只
+                                        需赔偿100元吗？这听起来很“不可
+                                        思议”的一幕，此前就发生在南京市
+                                        江宁区竹山路：一辆日产GT-R在...
+                                    </div>
+                                </div>
+                            </div><!--end media-->
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a> </li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-md-6-->
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading "><span class="h3">寿险</span>&nbsp;&nbsp;<span class="orange">给自己一份保障</span>
+                            <a href="#" class="pull-right more">更多...</a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img src="/images/a-4.jpg" style="width: 212px;height: 120px;">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="/consultation-detail">解读：第三者责任险你知多少？</a>   </h4>
+                                    <div class="info">
+                                        开车撞到价值上百万的宝马7系，只
+                                        需赔偿100元吗？这听起来很“不可
+                                        思议”的一幕，此前就发生在南京市
+                                        江宁区竹山路：一辆日产GT-R在...
+                                    </div>
+                                </div>
+                            </div><!--end media-->
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a> </li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                            <li class="list-group-item"><a href="#">事故视频分析 走神引发思域翻车事故事故视频分析 走神引..</a></li>
+                            <li class="list-group-item"> <a href="#">第三者责任险最重要 豪车轻蹭你伤不起 您了解多少？</a></li>
+                        </ul>
+                    </div>
+                </div><!--end col-md-6-->
+            </div><!--end row-->
+            <div class="mt10 qa-main qa-talk clearfix">
+                <h4>在线问答</h4>
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <div class="pull-left">
+                            <img src="/images/talk.png" style="width: 100px;height:100px;">
+                        </div>
+                        <div class="pull-right">
+                            <h5>您的问题：</h5>
+                            <input type="text" class="form-control" placeholder="请输入关键字">
+                            <div class="col-md-8 row mt10">
+                                <button class="btn btn-primary btn-block"> 提交</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--end col-md-4-->
+                <div class="col-md-8">
+                    <div class="qa-list two-col">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                            </li>
+
+                        </ul>
+                    </div><!--end qa-list-->
+                </div><!--end col-md-8-->
+            </div><!--end qa-list-->
+        </section>
+    </article>
+
+</div><!--end container-->
+<br>
+{/content}

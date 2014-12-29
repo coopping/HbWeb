@@ -1,0 +1,238 @@
+{>"layouts/e_site" /}
+
+{<content}
+
+<br>
+<div class="container">
+    <article class="mt30 consultant-main">
+        <section class="row mb20 media-main">
+            <div class="col-md-8">
+                <div class="media media-info">
+                    <a href="javascript:void(0)" class="pull-left">
+                        <img src="{agent.headerImg}" style="width: 125px;height:145px">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">欢迎来到{agent.agentNname}理财工作室！
+                            </h4>
+                        <ul class="list-unstyled info-detail">
+                            <li>
+                                <img src="/images/taiping-logo.png">
+                            </li>
+                            <li><span class="glyphicon glyphicon-thumbs-up"></span>
+                                <h4>
+                                    <small>专长领域：</small>
+                                    <span class="orange">{agent.skilled}</span>
+                                </h4>
+                            </li>
+                            <li><span class="glyphicon glyphicon-map-marker"></span>
+                                <h4>
+                                    <small>服务地区：</small>
+                                    <span class="orange">{agent.serviceArea}</span>
+                                </h4>
+                            </li>
+                            <li><span class="glyphicon glyphicon-time"></span>
+                                <h4>
+                                    <small>从业年限：</small>
+                                    <span class="orange">{agent.entire}</span>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--end media-->
+            </div><!--end col-md-8-->
+            <div class="col-md-4 ">
+                    <div class="user-ry">
+                        <h3 class="orange">
+                            <span class="icon-ry"></span>个人荣誉
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li><span class="icon-star"></span> <em>上海市优秀保险顾问</em></li>
+                            <li><span class="icon-star"></span> <em>保险业内标杆人物</em></li>
+                            <li> <span class="icon-star"></span> <em>2014年华东地区金牌顾问称号</em></li>
+                            <li> <span class="icon-star"></span> <em>2013年代理费用上海最高顾问</em></li>
+                        </ul>
+                    </div><!--end user-ry-->
+            </div><!--end col-md-4-->
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="user-sound">
+                        <h4 class="blue">
+                            <span class="icon-sound"></span>
+                            郑重声明
+                        </h4>
+                        <p class="h4 orange">
+                            本人方金宝，严正声明：
+                        </p>
+                        <p class="sound-text">
+                            严格依照有关法律法规行事
+                            绝不做违法乱纪、钻法律空
+                            子的事情，欢迎广大群众共
+                            同监督见证。
+                        </p>
+                    </div><!--end user-sound-->
+                    <div class="mt20 qa-main">
+                        <h4>客户咨询</h4>
+                        <div class="clearfix">
+                            <h5>您的问题：</h5>
+                            <input type="text" class="form-control" placeholder="请输入关键字">
+                            <div class="col-md-8 row mt10">
+                                <button class="btn btn-primary btn-block"> 提交</button>
+                            </div>
+                        </div>
+                        <div class="qa-list">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                    <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                                </li>
+                                <li>
+                                    <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                    <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                                </li>
+                                <li>
+                                    <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                    <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                                </li>
+                                <li>
+                                    <div><span class="orange">Q.</span> 买保险为什么要找代理？</div>
+                                    <div><span class="blue"> A. </span><a href="#">财产险和寿险购买有何...</a></div>
+                                </li>
+                                <li class="blue text-right">
+                                    <a href="#">更多。。。</a>
+                                </li>
+                            </ul>
+
+                        </div><!--end qa-list-->
+                    </div><!--end qa-list-->
+                    <div class="article-main mt20">
+                        <h3>保险人生<small class="blue">从业感悟、见闻</small></h3>
+                        <div class="article-list">
+                            <h4 class="orange">做个成功有良心的保险顾问</h4>
+                            <p>从做保险的第一天起，我就
+                                给自己定的这样一个目标！
+                                凭以前一点做业务的领悟，
+                                很多时侯想把成功...    <a href="#">文章详情</a>
+                            </p>
+                        </div>
+                        <div class="article-list">
+                            <h4 class="orange">做个成功有良心的保险顾问</h4>
+                            <p>从做保险的第一天起，我就
+                                给自己定的这样一个目标！
+                                凭以前一点做业务的领悟，
+                                很多时侯想把成功...    <a href="#">文章详情</a>
+                            </p>
+                        </div>
+                        <p class="text-right">
+                            <a href="#">更多。。。</a>
+                        </p>
+
+                    </div><!--end article-main-->
+
+                </div>
+                <div class="col-md-8 consultant-detail">
+                    <div class="media">
+                        <a href="javascript:void(0)" class="pull-left clearfix">
+                            <div class="pull-left"><img src="/images/icon-security.png"></div>
+                            <ul class="list-unstyled pull-left ml20">
+                               <li>
+                                   <div>最高保额</div>
+                                  <span class="orange">30.0万</span>
+                               </li>
+                                <li>
+                                    <div>年缴</div>
+                                    <span class="blue"><small>￥</small>4741<small>元</small></span>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <h3 class="text-center">安康无忧两全保险</h3>
+                        </a>
+                        <div class="media-body">
+                            <p>
+                                【亲民门槛】1000元起售<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                                【领得多】合同承诺固定领取每年年交保费的28%-41%<br>
+                                【时间长】从投保当年起，终身领取<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                            </p>
+                            <h3><small>此款产品已有</small><strong class="orange">1888</strong><small>人投保</small></h3>
+                        </div>
+                    </div><!--end media-->
+
+                    <div class="media">
+                        <a href="javascript:void(0)" class="pull-left clearfix">
+                            <div class="pull-left"><img src="/images/icon-security.png"></div>
+                            <ul class="list-unstyled pull-left ml20">
+                                <li>
+                                    <div>最高保额</div>
+                                    <span class="orange">30.0万</span>
+                                </li>
+                                <li>
+                                    <div>年缴</div>
+                                    <span class="blue"><small>￥</small>4741<small>元</small></span>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <h3 class="text-center">安康无忧两全保险</h3>
+                        </a>
+                        <div class="media-body">
+                            <p>
+                                【亲民门槛】1000元起售<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                                【领得多】合同承诺固定领取每年年交保费的28%-41%<br>
+                                【时间长】从投保当年起，终身领取<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                            </p>
+                            <h3><small>此款产品已有</small><strong class="orange">1888</strong><small>人投保</small></h3>
+                        </div>
+                    </div><!--end media-->
+
+                    <div class="media">
+                        <a href="javascript:void(0)" class="pull-left clearfix">
+                            <div class="pull-left"><img src="/images/icon-security.png"></div>
+                            <ul class="list-unstyled pull-left ml20">
+                                <li>
+                                    <div>最高保额</div>
+                                    <span class="orange">30.0万</span>
+                                </li>
+                                <li>
+                                    <div>年缴</div>
+                                    <span class="blue"><small>￥</small>4741<small>元</small></span>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <h3 class="text-center">安康无忧两全保险</h3>
+                        </a>
+                        <div class="media-body">
+                            <p>
+                                【亲民门槛】1000元起售<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                                【领得多】合同承诺固定领取每年年交保费的28%-41%<br>
+                                【时间长】从投保当年起，终身领取<br>
+                                【领的快】今天交费10天后即领第1笔生存金<br>
+                            </p>
+                            <h3><small>此款产品已有</small><strong class="orange">1888</strong><small>人投保</small></h3>
+                        </div>
+                    </div><!--end media-->
+
+                    <ul class="pagination pull-right">
+                        <li class="disabled"><a href="javascript:void(0)">«</a></li>
+                        <li class="active"><a href="javascript:void(0)">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">»</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+</div><!--end container-->
+<br>
+{/content}

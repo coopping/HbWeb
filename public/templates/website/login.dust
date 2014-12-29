@@ -1,0 +1,55 @@
+{>"layouts/e_site" /}
+
+{<content}
+
+<br>
+<div class="container mt30">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="login-box">
+                <form role="form" class="form-horizontal" id="loginForm" method="post">
+                    <input type="hidden" name="_csrf" value="{_csrf}" />
+                    <h3 class="text-center">会员登录</h3>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="username">账户</label>
+                        <div class="col-sm-8">
+                            <input name="username" type="text"  placeholder="输入注册时填写的邮箱／手机" id="username" class="form-control username" required check-type="required char" maxlength="16" minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label has-feedback" for="password">密码</label>
+                        <div class="col-sm-8">
+                            <input type="password" name="password"  placeholder="请输入密码" id="password" class="form-control password" required  check-type="required char" maxlength="16" minlength="6">
+                            <a  href="#" class="form-control-feedback">忘记密码？</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-8">
+                            <button class="btn btn-primary btn-block btn-lg" type="submit">立即登录</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="footer">
+                    <p class="text-center h4">您还可以使用以下账户快速登录</p>
+                    <div class="other-login">
+                        <a href="#"><img src="/images/weibo.jpg"> </a>
+                        <a href="#"><img src="/images/qq.jpg"> </a>
+                        <a href="#"><img src="/images/zhifubao.jpg"> </a>
+                    </div>
+                </div>
+            </div><!--end login-box-->
+        </div>
+        <div class="col-md-5 text-center add-user">
+            <p><img src="/images/add-user.jpg"> </p>
+            <p class="h3">成为会员享受更多功能</p>
+
+            <div class="col-sm-offset-2 col-sm-8">
+                <button class="btn btn-warning btn-block btn-lg" type="submit">注册成为会员</button>
+            </div>
+        </div>
+    </div>
+</div><!--end container-->
+<br>
+
+{/content}

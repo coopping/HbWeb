@@ -1,0 +1,193 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="mt30">
+        <section>
+            <div class="row">
+            <div class="col-md-3 consultant-article-list">
+                <div class="qa-main hot-qa">
+                    <img src="/images/qa-img.png" style="width: 100%">
+                    <div class="qa-list">
+                        <ul class="list-unstyled">
+                            <li>
+                                <div><span class="orange">Q.</span> 投保少儿险，这些误区你都了解吗？</div>
+                                <div><span class="blue"> A. </span><a href="#">误区一：只为孩子购买教育金忽略保障产品...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 2015如何制定子女成长保险计划？</div>
+                                <div><span class="blue"> A. </span><a href="#">据了解，少儿理财类保险适用家庭范围较广...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 不买保险，一辈子能省多少钱？</div>
+                                <div><span class="blue"> A. </span><a href="#">金融业三驾马车：银行催命，保险救命，证券玩命...</a></div>
+                            </li>
+                            <li>
+                                <div><span class="orange">Q.</span> 月光族如何巧用保险来理财？</div>
+                                <div><span class="blue"> A. </span><a href="#">月光族，顾名思义，就是每个月都把工资用光...</a></div>
+                            </li>
+                            <li class="blue text-right">
+                                <a href="#">更多。。。</a>
+                            </li>
+                        </ul>
+
+                    </div><!--end qa-list-->
+                </div><!--end qa-main-->
+
+                <div class="list-group mt20 company-list">
+                    <div  class="bg">
+                        各家保险公司特点
+                    </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>天安财险</strong>
+                            <div class="media">
+                                <a href="javascript:void(0)" class="pull-left">
+                                    <img src="/images/c-1.png">
+                                </a>
+                                <div  class="media-body">
+                                    <ul class="list-unstyled">
+                                        <li>  <span class="orange">1.</span>股份制保险公司</li>
+                                        <li>  <span class="orange">2.</span>主营财产险、车险</li>
+                                        <li>  <span class="orange">3.</span>以客户为中心</li>
+                                    </ul>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </li>
+                        <li>
+                            <strong>海康人寿</strong>
+                            <div class="media">
+                                <a href="javascript:void(0)" class="pull-left">
+                                    <img src="/images/c-2.png">
+                                </a>
+                                <div  class="media-body">
+                                    <ul class="list-unstyled">
+                                        <li>  <span class="orange">1.</span>专业、诚信、开创</li>
+                                        <li>  <span class="orange">2.</span>主营医辽、养老</li>
+                                        <li>  <span class="orange">3.</span>帮助客户未雨绸缪</li>
+                                    </ul>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </li>
+                        <li>
+                            <strong>太平保险</strong>
+                            <div class="media">
+                                <a href="javascript:void(0)" class="pull-left">
+                                    <img src="/images/c-3.png">
+                                </a>
+                                <div  class="media-body">
+                                    <ul class="list-unstyled">
+                                        <li>  <span class="orange">1.</span>一个客户一个太平</li>
+                                        <li>  <span class="orange">2.</span>业务范围涵盖广泛</li>
+                                        <li>  <span class="orange">3.</span>85周年</li>
+                                    </ul>
+                                </div><!--end media-body-->
+                            </div><!--end media-->
+                        </li>
+                        <li class="text-right">
+                            <a href="#">更多...</a>
+                        </li>
+                    </ul>
+                </div><!--end company-list-->
+
+            </div><!--end col-md-3-->
+                <div class="col-md-9 consultant-detail blue-box">
+                    <div class="clearfix product-box">
+                        <div class="pull-left product-left">
+                            <img src="/images/pro-2.png" style="width: 287px">
+                            <div class="clearfix share-info">
+                                <div class="pull-left">
+                                    <span class="glyphicon glyphicon-star-empty orange"></span>收藏（人气 98）
+                                </div>
+                                <div class="pull-right">
+                                    <span class="glyphicon glyphicon-share orange"></span>分享到
+                                </div>
+                            </div><!--end share-info-->
+                        </div><!--end product-left-->
+                        <div class="product-info">
+                            <span class="h3">聚富步步高保险计划</span>
+                            <div class="mt10">
+                                <ul class="info list-unstyled">
+                                    <li><span>投保目的：</span><span class="blue">投连险</span></li>
+                                    <li><span>保险期限：</span><span class="orange">终身</span></li>
+                                    <li><span>适用人群：</span><span>所有人群</span></li>
+                                    <li><span>产品特色：</span><span class="info-detail">价值优选  聚富理财  账户转换  分散风险  附加万能
+攻守兼备  追加自主  领取灵活  终身保障  关爱一生</span></li>
+                                    <li class="mt20"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="btn-primary btn">立即报价</button></li>
+                                    <li class="mt30"><span class="blue">温馨提示：</span><span class="orange">该产品存在多种套餐，请自行选择报价！</span></li>
+                                </ul>
+                            </div>
+                        </div><!--end product-info-->
+                    </div><!--end product-box-->
+                    <section class="product-detail-info mt30">
+                            <ul role="tablist" class="nav nav-tabs" id="myTab">
+                                <li class="active" role="presentation"><a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab" id="home-tab" href="#profile">产品描述</a></li>
+                                <li><a aria-controls="profile" data-toggle="tab" id="profile-tab" role="tab" href="#characteristic">产品特色</a></li>
+                                <li><a  data-toggle="tab" role="tab" tabindex="-1" href="#agent">代理人</a></li>
+                                <li><a  data-toggle="tab"  role="tab" tabindex="-1" href="#product-seek">产品咨询</a></li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div aria-labelledby="home-tab" id="profile" class="tab-pane fade in active" role="tabpanel">
+                                    <p>
+                                        保障利益：
+                                        <img src="/images/pro-3.png" style="width: 251px;" class="pull-right">
+                                        1．疾病身故或全残保险金<br>
+                                        被保险人于本合同生效之日起180日内(含180日当日)因疾病导致身故或全残，我们
+                                        无息退还所交保险费，本合同终止。 被保险人于本合同生效之日起180日后因疾病导
+                                        致身故或全残，我们按被保险人疾病身故或全残时本合同项下保单账户价值的105%给
+                                        付疾病身故或全残保险金，本合同终止。<br><br>
+
+                                        2. 意外伤害身故或全残保险金<br>
+                                        被保险人发生意外伤害事故，且自该事故发生之日起180日内（含180日当日）因该意
+                                        外伤害事故导致身故或全残的，我们按以下两项中的较小者给付意外伤害身故或全残
+                                        保险金，本合同终止。<br>
+                                        （1）被保险人身故或全残时本合同项下保单账户价值的205%；<br>
+                                        （2）被保险人身故或全残时本合同项下保单账户价值的105%与50万元之和。若被保险
+                                        人身故或全残时年龄超过65周岁（含65周岁），则为本合同项下保单账户价值的 105%与5000元之和。
+                                        3. 交通工具意外伤害身故或全残保险金<br>
+                                        被保险人以乘客身份乘坐客运公共交通工具期间遭受意外伤害事故，且自该事故发生之日起180日
+                                        内（含180日当日）因该意外伤害事故导致身故或全残的，我们在按 上述约定给付意外伤害身故或全残保险金的同时，再按以下两项中的
+                                        较小者给付交通工具意外身故或全残保险金，本合同终止<br>
+                                        （1）被保险人身故或全残时本合同项下的保单账户价值；<br>
+                                        （2）50万元。若被保险人身故或全残时年龄超过65周岁（含65周岁），则为5000元。<br>
+                                        责任免除：<br>
+                                        因下列情形之一导致被保险人身故的，我们不承担给付身故保险金的责任：<br>
+                                        (1) 投保人对被保险人的故意杀害、故意伤害；<br>
+                                        (2) 被保险人故意犯罪或者抗拒依法采取的刑事强制措施；<br>
+                                        (3) 被保险人自本合同成立或者合同效力恢复之日起2年内自杀，但被保险人自杀时为无民事行为能力人的除外；<br>
+                                        (4) 被保险人主动吸食或注射毒品；<br>
+                                        (5) 被保险人酒后驾驶、无合法有效驾驶证驾驶或驾驶无有效行驶证的机动车；<br>
+                                        (6) 战争、军事冲突、暴乱或武装叛乱；<br>
+                                        (7) 核爆炸、核辐射或核污染；<br>
+                                        (8) 被保险人从事潜水、滑水、滑雪、滑冰、滑翔翼、热气球、跳伞、攀岩、探险活动、武术比赛、摔跤比赛、柔道、空手道、跆拳道、
+                                        拳击、特技表演、蹦极、赛马、赛车、各种车辆表演及车辆竞赛等高风险运动；<br>
+                                        (9) 被保险人违反承运人关于乘坐客运公共交通工具的规定<br>
+                                        发生上述第（1）项情形导致被保险人身故或全残的，本合同终止，我们向受益人退还保险单的现金价值<br>
+                                        发生上述第（2）至第（9）项情形导致被保险人身故或全残的，本合同终止，我们向您退还保险单的现金价值。<br>
+                                    </p>
+                                </div>
+                                <div aria-labelledby="profile-tab" id="characteristic" class="tab-pane fade" role="tabpanel">
+                                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                                </div>
+                                <div aria-labelledby="agent-tab" id="agent" class="tab-pane fade" role="tabpanel">
+                                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                </div>
+                                <div aria-labelledby="product-seek-tab" id="product-seek" class="tab-pane fade" role="tabpanel">
+                                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                                </div>
+                            </div>
+                    </section>
+
+                </div><!--end col-md-9-->
+
+
+            </div>
+        </section>
+    </article>
+
+
+
+</div><!--end container-->
+<br>
+
+{/content}

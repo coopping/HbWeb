@@ -1,0 +1,161 @@
+{>"layouts/master" /} 
+{<content}
+<div class="panel panel-primary">
+  <div class="panel-heading">信息录入</div>
+  <div class="panel-body">
+		<form class="form-horizontal" method="post" id="addSubForm" role="form">
+			<input type="hidden" name="_csrf" value="{_csrf}" />
+			<input type="hidden" name="provider[providerId]" value="{provider.id}"/>
+			<div class="form-group">
+				<label for="name" class="col-sm-1 control-label">公司名称<span class="required-indicator">*</span></label>
+				<div class="col-sm-2">
+					<input type="text" name="provider[providerName]" class="form-control" id="name" value="{provider.providerName}" required>
+				</div>
+				<label for="abbr" class="col-sm-1 control-label">公司简称<span class="required-indicator">*</span></label>
+				<div class="col-sm-2">
+					<input type="text" name="provider[providerAbbr]" class="form-control" id="abbr" value="{provider.providerAbbr}" required>
+				</div>
+				<label for="type" class="col-sm-1 control-label">公司代码<span class="required-indicator">*</span></label>
+                    <div class="col-sm-2">
+                        <input type="text" name="provider[providerCode]" class="form-control" id="type" value="{provider.providerCode}" required>
+                    </div>
+				<label for="type" class="col-sm-1 control-label">公司类型<span class="required-indicator">*</span></label>
+				<div class="col-sm-2">
+                    <p class="form-control">{@baseCode id="providerType" code="{provider.providerType}" base="providerType" blank="true" required="true"/}</p>
+				</div>
+			</div>
+            <div class="form-group">
+                <label for="name" class="col-sm-1 control-label">联系人姓名<span class="required-indicator">*</span></label>
+                <div class="col-sm-2">
+                    <input type="text" name="provider[lxRen]" class="form-control" id="name" value="{provider.lxRen}" required>
+                </div>
+                <label for="abbr" class="col-sm-1 control-label">联系人电话<span class="required-indicator">*</span></label>
+                <div class="col-sm-2">
+                    <input type="text" name="provider[telephone]" class="form-control" id="telephone" value="{provider.telephone}" required>
+                </div>
+                <label for="type" class="col-sm-1 control-label">联系人手机<span class="required-indicator">*</span></label>
+                    <div class="col-sm-2">
+                        <input type="text" name="provider[mobilePhone]" class="form-control" id="mobilePhone" value="{provider.mobilePhone}" required>
+                    </div>
+                <label for="type" class="col-sm-1 control-label">联系人地址<span class="required-indicator">*</span></label>
+                <div class="col-sm-2">
+                    <input type="text" name="provider[address]" class="form-control" id="address" value="{provider.address}"   required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name" class="col-sm-1 control-label">客服电话<span class="required-indicator">*</span></label>
+                <div class="col-sm-2">
+                    <input type="text" name="provider[clientTel]" class="form-control" id="clientTel" value="{provider.clientTel}" required>
+                </div>
+                <label for="type" class="col-sm-1 control-label">官网地址<span class="required-indicator">*</span></label>
+                <div class="col-sm-2">
+                    <input type="text" name="provider[officialURL]" class="form-control" id="officialURL" value="{provider.officialURL}" required>
+                </div>
+                <label for="type" class="col-sm-1 control-label">保单查询网址<span class="required-indicator">*</span></label>
+                    <div class="col-sm-2">
+                        <input type="text" name="provider[contractURL]" class="form-control" id="contractURL" value="{provider.contractURL}" required>
+                    </div>
+                <label for="type" class="col-sm-1 control-label">微信号</label>
+                <div class="col-sm-2">
+                    <input type="text" name="provider[wechat]" class="form-control" id="wechat" value="{provider.wechat}">
+                </div>
+            </div>
+			<div class="form-group">
+			    <div class="col-sm-10">
+                </div>
+                <div class="col-sm-2">
+                    <div class="btn-toolbar" role="toolbar">
+                        <div class="btn-group">
+                            <button type="submit" class="btn btn-primary" onclick="validate()">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</form>
+	</div>
+</div>
+{/content}
+{<script}
+<script type="text/javascript">
+
+    function goBack(){
+        window.location.href = "/provider/provider/list";
+    }
+
+    function validate(){
+        var telephone = $("#telephone").val();
+        var regTel = /((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/;
+        var flag1 =  regTel.test(telephone);
+        if(!flag1){
+            var some_html = '<br><div class="alert alert-danger fade in">';
+                document.getElementById("telephone").value='';
+                some_html += '<label>电话号码格式不正确！</label>';
+                              some_html += '</div>';
+                              bootbox.alert(some_html);
+                return ;
+        }
+
+        var mobilePhone = $("#mobilePhone").val();
+        var reg = /^0?(13[0-9]|15[012356789]|18[0-9]|14[57])[0-9]{8}$/;
+        var flag =  reg.test(mobilePhone);
+        if(!flag){
+            var some_html = '<br><div class="alert alert-danger fade in">';
+               document.getElementById("mobilePhone").value='';
+               some_html += '<label>手机号码格式不正确！</label>';
+                              some_html += '</div>';
+                              bootbox.alert(some_html);
+               return ;
+        }
+
+        var clientTel = $("#clientTel").val();
+        if(clientTel.length > 11){
+               var some_html = '<br><div class="alert alert-danger fade in">';
+               document.getElementById("mobilePhone").value='';
+               some_html += '<label>客服电话号码长度不能大于11位！</label>';
+                              some_html += '</div>';
+                              bootbox.alert(some_html);
+               return ;
+        }
+
+        var reg2 = new RegExp("^[\u4e00-\u9fa5]{0,}$");
+        var flag2 =  reg2.test(clientTel);
+        if(flag2){
+            var some_html = '<br><div class="alert alert-danger fade in">';
+               document.getElementById("mobilePhone").value='';
+               some_html += '<label>客服电话号码格不能为汉字！</label>';
+                              some_html += '</div>';
+                              bootbox.alert(some_html);
+               return ;
+        }
+
+        var reg3 = new RegExp("^[A-Za-z]+$");
+        var flag3 =  reg3.test(clientTel);
+        if(flag3){
+            var some_html = '<br><div class="alert alert-danger fade in">';
+               document.getElementById("mobilePhone").value='';
+               some_html += '<label>客服电话不能为英文字母！</label>';
+                              some_html += '</div>';
+                              bootbox.alert(some_html);
+               return ;
+        }
+
+    }
+
+	$('.date').datepicker({
+		format : "yyyy-mm-dd",
+		autoclose : true,
+		language : 'zh-CN',
+		todayHighlight : true
+	});
+
+	$("#addSubForm").validate({
+		submitHandler:function(form){
+			$(":button").attr("disabled","true");  
+			form.action = '/provider/provider/{provider.id}/edit';
+            form.submit();
+        },
+        focusCleanup:true
+	});
+
+</script>
+{/script}

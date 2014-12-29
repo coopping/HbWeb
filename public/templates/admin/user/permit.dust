@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<title>{+title}UM{/title}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="HuiBao - 综合交易业务服务平台。">
+<meta name="author" content="HuiBao">
+<link href="http://cdn.bootcss.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="alert alert-warning fade in">
+        <p>Hi {user.fullName}!</p>
+        <p><b>您是否同意访问应用：{client.name}？</p>
+        <form class="form-horizontal" method="post" action="/auth/permit" id="applicationForm" role="form">
+            <input type="hidden" name="_csrf" value="{_csrf}" />
+            <input name="transaction_id" type="hidden" value="{transactionID}">
+            <div class="form-group">
+                <div class="col-sm-4 col-sm-offset-2">
+                    <div class="btn-toolbar" role="toolbar">
+                        <div class="btn-group">
+                            <input type="submit" value="同意" class="btn btn-primary" id="allow">
+                        </div>
+                        <div class="btn-group">
+                            <input type="submit" value="取消" class="btn btn-default" name="cancel" id="deny">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

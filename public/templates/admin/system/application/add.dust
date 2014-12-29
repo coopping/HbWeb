@@ -1,0 +1,23 @@
+{>"layouts/master" /}
+{<content}
+    <div class="panel panel-primary">
+      <div class="panel-heading">{title}</div>
+      <div class="panel-body">
+            {>"system/application/_form"/}
+        </div>
+    </div>
+{/content}
+{<script}
+<script type="text/javascript">
+
+    $("#returnButton").attr("href", "/system/application");
+    $("#applicationForm").validate({
+        submitHandler:function(form){
+            $(":button").attr("disabled","true");  
+            form.action = '/system/application/add';
+            form.submit();
+        },
+        focusCleanup:true
+    });
+</script> 
+{/script}

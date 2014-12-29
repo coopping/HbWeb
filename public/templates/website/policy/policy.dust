@@ -1,0 +1,38 @@
+{>"layouts/e_site" /}
+
+{<content}
+    <div class="container">
+    <article class="mt30">
+        <section class="step1 text-center">
+            <img src="/images/step1.png" style="width: 650px">
+        </section>
+        <section class="policy-step mt30">
+            <div class="media">
+                <a href="javascript:void(0)" class="pull-left">
+                    <img src="/images/step-img1.png" style="width: 343px">
+                </a>
+                <div class="media-body">
+                    <h3 class="orange">为什么要评估？</h3>
+                    <p>
+                        在人们的日常生活中，风险是各种各样的，保险公司从事保险业务，承担着来自各个不同领域的
+                        多种风险，保险事故发生后，仅靠保险公司自己所有的专业人才是难以完成事故评估任务的，而
+                        且由保险公司自己的专家进行事故鉴定是否能做到公正，还需要经过被保险人的认可。
+                    </p>
+                    <h3 class="orange">保险评估的好处和必要性？</h3>
+                    <p>
+                        ① 保险评估的出现与保险市场的发展密不可分，它是保险市场发展的必然产物。<br>
+                        ② 保险公司理赔事务的日益增加和复杂化产生了对评估专业性的需求<br>
+                        ③ 对保险事故所涉及的保险标的进行评估、勘验、鉴定、估损、理算等活动是购买保险必要的
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="text-right mt20">
+            <a href="/policy-1" class="btn btn-primary">下一步</a>
+        </section>
+    </article>
+
+
+</div><!--end container-->
+<br>
+{/content}
